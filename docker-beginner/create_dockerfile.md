@@ -51,10 +51,10 @@ Verification
 FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 ```{{execute T1}}
 
-vous devrez avoir la mire web flask 
+vous devrez voir la mire web flask 
 
-Ensuite faire un Ctrl-c et tapez history 
-et faite un Ctrl-c des commandes que vous avez tapees precedement
+Ensuite faire un Ctrl-c et tapez ```history``` 
+et faite un click droit, copy  des commandes que vous avez tapees precedement
 
 ```
 exit
