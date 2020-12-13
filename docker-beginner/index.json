@@ -18,8 +18,12 @@
         "text": "nettoyage.md"
       },
       {
-        "title": "Voir les changement a l'interieur d'un container",
+        "title": "docker pause et unpause",
         "text": "pause.md"
+      },
+      {
+        "title": "changement a l'interieur d'un container,
+        "text": "changement.md"
       },
       {
         "title": "Creer une image docker",
@@ -55,7 +59,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    "uimessage1": "\u001b[32mVotre bash en interactif\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu"
