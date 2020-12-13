@@ -1,0 +1,67 @@
+{
+  "title": "Docker Pour intermediate ",
+  "description": "Plus loin avec  docker",
+  "difficulty": "Intermediate",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "docker registry",
+        "text": "registry.md"
+      },
+      {
+        "title": "un container en tache de fond",
+        "text": "tache_de_fond.md"
+      },
+      {
+        "title": "Faire du nettoyage",
+        "text": "nettoyage.md"
+      },
+      {
+        "title": "docker pause et unpause",
+        "text": "pause.md"
+      },
+      {
+        "title": "changement a l'interieur d'un container",
+        "text": "changement.md"
+      },
+      {
+        "title": "Creer une image docker a partir d'un container",
+        "text": "docker_commit.md"
+      },
+      {
+        "title": "Docker load et Docker save",
+        "text": "load_save.md"
+      },
+      {
+        "title": "Docker export et Docker import",
+        "text": "export_import.md"
+      },
+      {
+        "title": "Preparation pour ecrire un Dockerfile",
+        "text": "create_dockerfile.md"
+      },
+      {
+        "title": "Application du langage DSL du Dockerfile",
+        "text": "dsl_dockerfile.md"
+      },
+      {
+        "title": "Build d'un image avec l'application",
+        "text": "build.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVotre bash en interactif.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
