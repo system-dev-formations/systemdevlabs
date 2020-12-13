@@ -10,6 +10,10 @@
         "text": "registry.md"
       },
       {
+        "title": "Faire du nettoyage",
+        "text": "nettoyage.md"
+      },
+      {
         "title": "Enregistrer une image dans docker hub",
         "text": "docker_hub.md"
       },

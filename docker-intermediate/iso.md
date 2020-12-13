@@ -3,7 +3,7 @@ Mise a jour des repos
 apt-get update
 ```{{execute T1}}
 
-Installation des package virt-tar-out 
+Installation des packages virt-tar-out et autres
 ```
 sudo apt-get -y install libguestfs-tools
 ```{{execute T1}}
