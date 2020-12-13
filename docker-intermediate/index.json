@@ -12,6 +12,10 @@
       {
         "title": "Enregistrer une image dans docker hub",
         "text": "docker_hub.md"
+      },
+      {
+        "title": "Creation d'une image a partir d'un ISO",
+        "text": "iso.md"
       }
     ],
     "intro": {
