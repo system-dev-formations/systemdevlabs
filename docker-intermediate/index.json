@@ -8,6 +8,10 @@
       {
         "title": "docker registry",
         "text": "registry.md"
+      },
+      {
+        "title": "Enregistrer une image dans docker hub",
+        "text": "docker_hub.md"
       }
     ],
     "intro": {

@@ -18,7 +18,7 @@ Verification
 docker images
 ```{{execute T1}}
 
-Charement de l'image dans la registry prive 
+Chargement de l'image dans la registry prive 
 ```
 docker push localhost:5000/myfirstimage
 ```{{execute T1}}
