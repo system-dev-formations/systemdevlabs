@@ -4,7 +4,7 @@ Lancement d'un container de travail
 docker run -it ubuntu 
 ```{{execute T1}}
 
-Tapez les commandes suivantes en sequence
+Tapez les commandes suivantes en sequence  
 mise a jour des repos d'ubuntu
 ```
 apt-get update
@@ -55,6 +55,10 @@ vous devrez avoir la mire web flask
 
 Ensuite faire un Ctrl-c et tapez history 
 et faite un Ctrl-c des commandes que vous avez tapees precedement
+
+```
+exit
+```{{execute T1}}
 
 Ouvrir un fichier Dockerfile
 ```
