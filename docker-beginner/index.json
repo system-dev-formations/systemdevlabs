@@ -22,7 +22,7 @@
         "text": "pause.md"
       },
       {
-        "title": "changement a l'interieur d'un container,
+        "title": "changement a l'interieur d'un container",
         "text": "changement.md"
       },
       {
@@ -59,7 +59,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mVotre bash en interactif\u001b[m\r\n"
+    "uimessage1": "\u001b[32mVotre bash en interactif.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu"
