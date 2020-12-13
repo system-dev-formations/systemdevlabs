@@ -1,49 +1,49 @@
 {
-  "title": "Docker ",
-  "description": "Prise en main de docker",
+  "title": "Docker Pour Debutant ",
+  "description": "Presentation de docker",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Introduction a Docker",
+        "text": "check.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "un container en tache de fond",
+        "text": "tache_de_fond.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Faire du nettoyage",
+        "text": "nettoyage.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
+        "title": "Voir les changement a l'interieur d'un container",
+        "text": "pause.md"
       },
       {
-        "title": "Step 5",
-        "text": "step5.md"
+        "title": "Creer une image docker",
+        "text": "docker_commit.md"
       },
       {
-        "title": "Step 6",
-        "text": "step6.md"
+        "title": "Docker load et Docker save",
+        "text": "load_save.md"
       },
       {
-        "title": "Step 7",
-        "text": "step7.md"
+        "title": "Docker export et Docker import",
+        "text": "export_import.md"
       },
       {
-        "title": "Step 8",
-        "text": "step8.md"
+        "title": "Preparation pour ecrire Dockerfile",
+        "text": "create_dockerfile.md"
       },
       {
-        "title": "Step 9",
-        "text": "step9.md"
+        "title": "Application du langage DSL du Dockerfile",
+        "text": "dsl_dockerfile.md"
       },
       {
-        "title": "Step 10",
-        "text": "step10.md"
+        "title": "Build d'un image avec l'application",
+        "text": "build.md"
       }
     ],
     "intro": {
@@ -54,7 +54,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal"
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu"
