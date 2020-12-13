@@ -44,7 +44,7 @@ def hello():
 if __name__ == "__main__":
     app.run()
 ```
-et Ctrl-C pour sortir
+et faire Enter et Ctrl-C pour sortir
 
 Verification 
 ```
@@ -52,6 +52,18 @@ FLASK_APP=/opt/app.py flask run --host=0.0.0.0
 ```{{execute T1}}
 
 vous devrez avoir la mire web flask 
+
+Ensuite faire un Ctrl-c et tapez history 
+et faite un Ctrl-c des commandes que vous avez tapees precedement
+
+Ouvrir un fichier Dockerfile
+```
+vi Dockerfile
+```{{execute T1}}
+
+tapez  sur la touche i 
+et faire un click droit , paste 
+
 
 
 
