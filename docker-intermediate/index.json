@@ -1,6 +1,6 @@
 {
   "title": "Docker Pour intermediate ",
-  "description": "Plus loin avec  docker",
+  "description": "Plus loin avec docker",
   "difficulty": "Intermediate",
   "time": "60 minutes",
   "details": {
@@ -20,6 +20,10 @@
       {
         "title": "Creation d'une image a partir d'un ISO",
         "text": "iso.md"
+      },
+      {
+        "title": "Versionning d'image",
+        "text": "version.md"
       }
     ],
     "intro": {
