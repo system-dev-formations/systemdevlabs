@@ -1,2 +1,1 @@
-apt update
-apt -y install ansible
+git clone http://github.com/master-afip/ansible-examples.git
