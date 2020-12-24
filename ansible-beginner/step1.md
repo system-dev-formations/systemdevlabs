@@ -15,9 +15,9 @@ ansible all -m ping -i inventory_katacoda
 ```{{execute T1}}
 
 C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
-* ansible   c'est le nom du programme
-* all       correspond a tous les hosts precises dans le fichier d'inventaire inventory_katacoda 
-* -m ping   m pour module avec le nom du module c'est ici l'outil ping
-* -i        inventory_katacoda soumet ce fichier d'inventaire a Ansible
+*  *ansible*   c'est le nom du programme
+*  *all*       correspond a tous les hosts precises dans le fichier d'inventaire inventory_katacoda 
+*  *-m ping*   m pour module avec le nom du module c'est ici l'outil ping
+*  *-i inventory_katacoda* soumet ce fichier d'inventaire a Ansible
 
 ![architecture](./assets/architecture_ansible.png)
