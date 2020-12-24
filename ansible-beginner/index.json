@@ -1,7 +1,9 @@
 {
     "noindex": true,
-    "title": "Ansible Debutant",
+    "title": "Ansible pour Debutant",
     "description": "Cours Ansible pour debutant",
+    "difficulty": "Beginner",
+    "time": "60 minutes",
     "details": {
         "intro": {
             "courseData": "background.sh",
