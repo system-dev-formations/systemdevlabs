@@ -20,4 +20,4 @@ C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
 * -m ping   m pour module avec le nom du module c'est ici l'outil ping
 * -i        inventory_katacoda soumet ce fichier d'inventaire a Ansible
 
-![architecture](images/architecture_ansible.png)
+![architecture](./assets/architecture_ansible.png)
