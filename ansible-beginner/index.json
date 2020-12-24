@@ -24,10 +24,13 @@
                 "text": "step3.md"
             },
             {
-                "title": "Step-4: Commandes Ad-Hoc Les facts",
+                "title": "Step-4: Commandes Ad-Hoc",
                 "text": "step4.md"
+            },
+            {
+                "title": "Step-5: Commandes Ad-Hoc",
+                "text": "step5.md"
             }
-
         ],
         "assets": {
             "host01": [
