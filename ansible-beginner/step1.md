@@ -1,15 +1,15 @@
 
 ### Verification de l'environment 
 
-Attendez que les containers soient installes
-On change de directory  
+Attendez que les containers soient installes  
+On change ensuite de directory  
 
 ```
 cd ansible-examples
 ```{{execute T1}}
 
 
-et on execute pour verifier l'installation
+et on execute la commande suivante pour verifier l'installation
 ```
 ansible all -m ping -i inventory_katacoda
 ```{{execute T1}}
