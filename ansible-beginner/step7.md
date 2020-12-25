@@ -10,7 +10,7 @@ ansible-playbook -i inventory_katacoda ansible_facts_using_when.yml
 
 Analyse du fichier
 ```
-cat ansible_facts_using_when.yml
+cat ansible_facts_using_assert.yml
 ```{{execute T1}}
 
 Test avec assert 
