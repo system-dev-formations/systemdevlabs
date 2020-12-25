@@ -1,7 +1,7 @@
 ## Les facts
 
 Les facts sont des grosses structures de donnees qui sont echangees entre la machine
-`ansible controller` et les machines distantes. Ces structures donnees contiennent 
+`ansible controller` et les machines distantes. Ces structures de donnees contiennent 
 des informations comme: le nom de l'OS, la memoire, les cartes reseau ...etc  
 La commande suivante affiche l'interface IPV4 presente sur les hosts  
 ```

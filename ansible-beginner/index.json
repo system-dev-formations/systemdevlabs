@@ -30,6 +30,10 @@
             {
                 "title": "Step-5: Commandes Ad-Hoc",
                 "text": "step5.md"
+            },
+            {
+                "title": "Step-6: Premier Playbooks",
+                "text": "step6.md"
             }
         ],
         "assets": {
