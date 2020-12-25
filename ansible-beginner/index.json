@@ -32,8 +32,12 @@
                 "text": "step5.md"
             },
             {
-                "title": "Step-6: Premier Playbooks",
+                "title": "Step-6: Premier Playbook",
                 "text": "step6.md"
+            },
+            {
+                "title": "Step-7: Differents types de conditions",
+                "text": "step7.md"
             }
         ],
         "assets": {

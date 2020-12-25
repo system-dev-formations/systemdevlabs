@@ -1,6 +1,6 @@
 Faites un `cat` du fichier suivant:
 ```
-cat ansible_ping
+cat ansible_ping.yml
 ```{{execute T1}}
 
 Premier playbook
