@@ -38,7 +38,19 @@
             {
                 "title": "Step-7: Differents types de conditions",
                 "text": "step7.md"
+            },
+            {
+                "title": "Step-8: Conditions et boucles",
+                "text": "step8.md"
+            },
+            {
+                "title": "Step-9: In-memory inventory",
+                "text": "step9.md"
             }
+
+
+
+
         ],
         "assets": {
             "host01": [
