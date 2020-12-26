@@ -1,3 +1,15 @@
+### Pre-requis
+Creez une cle ssh
+```
+ssh-keygen -t rsa -b 4096
+```{{execute T1}}
+Repondre avec la touche enter pour accepter les valeurs par defaut
+
+Copiez cette cle dans le container target2 centos
+```
+ssh-copy-id centos@172.18.0.3
+```{{execute T1}}
+
 ###  Clonez ce projet
 Tapez 
 ```
