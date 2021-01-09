@@ -3,6 +3,7 @@
     "icon": "fa-kubernetes",
     "title": "Kubernetes for beginners",
     "description": "Use Kubernetes",
+    "time": "60 minutes",
     "difficulty": "Beginner",
     "details": {
         "steps": [
