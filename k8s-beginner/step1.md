@@ -9,7 +9,7 @@ Observer si le cluster est pret
 k get nodes
 ```{{execute T1}}
 
-Lancer plusieur fois la commande ci-dessus pour verifier  
+Lancer plusieurs fois la commande ci-dessus pour verifier  
 
 Faites cette commande qui presente plus infos sur la configuration du 
 cluster 
