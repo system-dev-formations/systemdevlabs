@@ -1,9 +1,9 @@
 {
     "pathwayTitle": "Kubernetes",
     "icon": "fa-kubernetes",
-    "title": "Install Portworx on Kubernetes",
-    "description": "Install Portworx on Kubernetes",
-    "difficulty": "Intermediate",
+    "title": "Kubernetes for beginners",
+    "description": "Use Kubernetes",
+    "difficulty": "Beginner",
     "details": {
         "steps": [
             {
@@ -40,6 +40,6 @@
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "kubernetes-cluster-4node-running"
+        "imageid": "kubernetes-cluster-running:1.20"
     }
 }
