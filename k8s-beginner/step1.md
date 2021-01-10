@@ -1,8 +1,3 @@
-Lancement de launch.sh qui va installer le cluster
-
-```
-launch.sh
-```{{execute T1}}
 
 Observer si le cluster est pret
 ```
@@ -18,7 +13,8 @@ k get nodes -o wide
 ```{{execute T1}}
 
 Activez la completion en ligne de commande pour eviter de taper les noms 
-des objet Kubernetes qui peuvent etre tres longs
+des objet Kubernetes qui peuvent etre tres longs. 
+A noter: k est un alias pour le programme kubectl 
 ```
 source <( kubectl completion bash | sed s/kubectl/k/g)
 ```{{execute T1}}

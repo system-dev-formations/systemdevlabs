@@ -1,9 +1,4 @@
 
-Nous allons recuperer un repo github de travail
-```
-git clone   https://github.com/system-dev-formations/k8s-webforce3.git && cd k8s-webforce3
-```{{ execute T1 }}
-
 Premier deployment Kubernetes d'un server web Nginx.
 ```
   k create deployment nginx --image=nginx
