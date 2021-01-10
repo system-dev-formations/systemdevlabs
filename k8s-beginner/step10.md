@@ -1,11 +1,11 @@
 Helm est un repository d'objet Kubernetes, développé par la communauté Kubernetes
-et mise a disposition a travers cette application. 
-Comme github qui propose des projets open-source
-Docker hub propose des images docker 
-Ansible-galaxy  fournit des roles Ansible pour installer des logiciels
+et mise a disposition a travers cette application.   
+Comme github qui propose des projets open-source  
+Docker hub propose des images docker   
+Ansible-galaxy  fournit des roles Ansible pour installer des logiciels  
 Helm fourni des application Kubernets pretes a l'emploi.
 
-### Recherche de logiciel qui sont appellés Chart
+### Recherche des logiciels, dans la terminologie Helm ils sont appelés **Chart**.
 ```
 helm search hub wordpress
 ```{{ execute T1}}
