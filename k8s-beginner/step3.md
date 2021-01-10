@@ -19,8 +19,8 @@ Plus d'informations sur le déploiement
   k describe deploy nginx 
 ```{{ execute T1 }}
 
-On peut chainer les objets Kubernetes a verifier
+On peux chainer les objets a verifier 
 ```
-k describe deploy, pod  nginx
+k get deploy, pod
 ```{{ execute T1 }}
 

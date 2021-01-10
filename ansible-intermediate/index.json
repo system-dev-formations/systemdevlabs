@@ -1,0 +1,71 @@
+{
+    "noindex": true,
+    "title": "Ansible pour Intermediate",
+    "description": "Cours Ansible pour intermediate",
+    "difficulty": "Intermediate",
+    "time": "60 minutes",
+    "details": {
+        "intro": {
+            "courseData": "background.sh",
+            "code": "foreground.sh",
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Step-1: ",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step-2: Commandes utiles",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step-3: Commandes Ad-Hoc",
+                "text": "step3.md"
+            },
+            {
+                "title": "Step-4: Commandes Ad-Hoc",
+                "text": "step4.md"
+            },
+            {
+                "title": "Step-5: Commandes Ad-Hoc",
+                "text": "step5.md"
+            },
+            {
+                "title": "Step-6: Premier Playbook",
+                "text": "step6.md"
+            },
+            {
+                "title": "Step-7: Differents types de conditions",
+                "text": "step7.md"
+            },
+            {
+                "title": "Step-8: Conditions et boucles",
+                "text": "step8.md"
+            },
+            {
+                "title": "Step-9: In-memory inventory",
+                "text": "step9.md"
+            },
+{
+                "title": "Step-10: Inventaire dynamique",
+                "text": "step10.md"
+            }
+
+
+
+        ],
+        "assets": {
+            "host01": [
+                {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            ]
+        }
+    },
+    "files": [],
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}

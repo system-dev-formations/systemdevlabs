@@ -1,7 +1,7 @@
 
 ### Installation du hostpath
 ```
-k create -f mysqldb-hostpath.yaml
+cd ~/k8s-webforce3/lab-helm && k create -f mysqldb-hostpath.yaml
 ```{{ execute T1}}
 
 ### Verification du persistence volume
