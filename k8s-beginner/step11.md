@@ -14,6 +14,11 @@ k get pv
 k create -f mysqldb-pvc.yaml
 ```{{ execute T1}}
 
+### Verification du persistence volume claim
+```
+k get pvc 
+```{{ execute T1}}
+
 ### Download du chart mysql et configuration 
 ```
 helm install  mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql

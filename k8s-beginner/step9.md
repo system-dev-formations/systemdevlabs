@@ -12,12 +12,12 @@ cd && wget https://github.com/helm/helm/archive/v3.4.2.tar.gz
 
 ### Decompression du fichier tar.gz
 ```
-tar -zxvf v3.4.3.tar.gz
+tar -zxvf v3.4.2.tar.gz
 ```{{ execute T1 }}
 
 ### Build 
 ```
-cd helm-3.4.3 && make 
+cd helm-3.4.2 && make 
 ```{{ execute T1}}
 
 ### Copy du binaire helm dans /usr/local/bin
