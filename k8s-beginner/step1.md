@@ -22,3 +22,9 @@ des objet Kubernetes qui peuvent etre tres longs
 ```
 source <( kubectl completion bash | sed s/kubectl/k/g)
 ```{{execute T1}}
+
+Voir les informations d'un noeud .
+```
+k describe node node01
+```{{execute T1}}
+
