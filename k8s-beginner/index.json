@@ -20,7 +20,11 @@
                 "text": "step3.md"
             },
             {
-                "title" : "Helm",
+                "title" : "Installation d'Helm",
+                "text": "step9.md"
+            },
+            {
+                "title" : "Configuration d'Helm",
                 "text": "step10.md"
             },
             {
