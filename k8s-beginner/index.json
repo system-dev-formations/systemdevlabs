@@ -18,6 +18,10 @@
             {
                 "title" : "Le Pod",
                 "text": "step3.md"
+            },
+            {
+                "title" : "Helm",
+                "text": "step10.md"
             }
         ],
         "intro": {

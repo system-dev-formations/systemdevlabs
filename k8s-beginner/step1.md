@@ -1,18 +1,19 @@
 
-Observer si le cluster est pret
+Vérifiez si le cluster est pret
 ```
 k get nodes
 ```{{execute T1}}
 
-Lancer plusieurs fois la commande ci-dessus pour verifier  
+Lancer plusieurs fois la commande ci-dessus pour vérifier. Il faut que le master
+et le node soient en statut Ready.   
 
-Faites cette commande qui presente plus infos sur la configuration du 
+Faites cette commande qui présente plus infos sur la configuration du 
 cluster 
 ```
 k get nodes -o wide
 ```{{execute T1}}
 
-Activez la completion en ligne de commande pour eviter de taper les noms 
+Activez la completion en ligne de commande pour éviter de taper les noms 
 des objet Kubernetes qui peuvent etre tres longs. 
 A noter: k est un alias pour le programme kubectl 
 ```

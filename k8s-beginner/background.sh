@@ -7,3 +7,11 @@ while [ ! -f /root/.kube/config ]
 if [ -f /root/.kube/start ]; then
   /root/.kube/start
 fi
+wget https://github.com/helm/helm/archive/v3.4.2.tar.gz
+tar -zxvf v3.4.3.tar.gz
+cd helm-3.4.2/
+make
+cd bin
+cp  helm /usr/local/bin/helm
+echo done >> /root/katacoda-finished
+echo done >> /root/katacoda-background-finished
