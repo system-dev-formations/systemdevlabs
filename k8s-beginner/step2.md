@@ -1,21 +1,30 @@
 
-Premier deployment Kubernetes d'un server web Nginx.
-Nous allons exécute les commandes nécessaires pour voir la page 
-d'accueil de Nginx dans notre navigateur. 
-Pour cela il y a quelques commandes de configuration a taper.
-```
-  k create deployment nginx --image=nginx
-```{{ execute T1 }}
+Pour que le master puisse integrer des objets Kubernetes de cette formation. 
+Nous devons le configurer de cette maniere
+**Attention: Ces commandes ne doivent pas etre effectuees dans un cluster de production**
 
-Vérification, relancer plusieur fois cette commande ci-dessous pour voir le 
-résultat de la colonne READY, il doit etre égal a 1/1. 
-Cela signifie que votre pod a été demarré. 
+### Recherche du taint
 ```
-  k get deploy
-```{{ execute T1 }}
+k describe node | grep -i taint
+```{{execute T1}}
 
-Plus d'informations sur le déploiement
+### Effacement de l'option taint sur le master    
+
 ```
-  k describe deploy nginx 
-```{{ execute T1 }}
+k taint nodes --all node-role.kubernetes.io/master-
+```{{execute T1}}
 
+## Verification 
+Nous allons deployer un objet de type DaemonSet qui se place sur tous les nodes du cluster. 
+Comme le master accepte les objets Kubernetes, nous devons avoir 2 DaemonSets deployes.
+
+```
+kubectl create deploy nginx --image=nginx --dry-run -o yaml | 
+sed '/null\|{}\|replicas/d;/status/,$d;s/Deployment/DaemonSet/g' > nginx-ds.yaml
+```{{execute T1}}
+
+et 
+
+```
+kubectl apply -f nginx-ds.yaml
+```{{execute T1}}

@@ -12,12 +12,16 @@
                 "text": "step1.md"
             },
             {
-                "title" : "Premier deployement",
+                "title" : "Modification du Master",
                 "text": "step2.md"
             },
             {
-                "title" : "Le Pod",
+                "title" : "Premier deployement",
                 "text": "step3.md"
+            },
+            {
+                "title" : "Le Pod",
+                "text": "step4.md"
             },
             {
                 "title" : "Installation d'Helm",

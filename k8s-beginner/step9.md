@@ -1,9 +1,9 @@
-Helm est un repository d'objet Kubernetes, développé par la communauté Kubernetes
-et mise a disposition a travers cette application.   
-Comme github qui propose des projets open-source  
-Docker hub propose des images docker   
-Ansible-galaxy  fournit des roles Ansible pour installer des logiciels  
-Helm fourni des application Kubernets pretes a l'emploi.
+Helm est un repository d'objets Kubernetes, développé par la communauté Kubernetes
+et mis a disposition a travers cette application.   
+Comme github propose des projets open-source.  
+Docker hub propose des images docker.   
+Ansible-galaxy fournit des roles Ansible pour installer des logiciels.  
+Helm fournit des applications Kubernetes pretes a l'emploi.
 
 ### Downloader la derniere version de helm 
 ```
@@ -20,7 +20,7 @@ tar -zxvf v3.4.2.tar.gz
 cd helm-3.4.2 && make 
 ```{{ execute T1}}
 
-### Copy du binaire helm dans /usr/local/bin
+### Copiez le binaire helm dans /usr/local/bin
 ```
 cp bin/helm /usr/local/bin/helm
 ```{{ execute T1}}
