@@ -1,12 +1,16 @@
-
-C'est la plus petite unité d'exécution de Kubernetes. 
-
+### Expose la ressource 
 ```
-k get pod
-```{{ execute T1}}
-
-Le nom de ce pod introduit le concept de **Pets and Cattle**.
+  k  expose deploy nginx
+```{{ execute T1 }}
 
 
  
+```
+  k get deploy
+```{{ execute T1 }}
+
+Plus d'informations sur le déploiement
+```
+  k describe deploy  nginx 
+```{{ execute T1 }}
 
