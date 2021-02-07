@@ -1,0 +1,46 @@
+{
+    "noindex": true,
+    "title": "TP-Ansible-Afip",
+    "description": "Rappel des commandes et ecriture d'un filtre ansible",
+    "difficulty": "Intermediate",
+    "time": "60 minutes",
+    "details": {
+        "intro": {
+            "courseData": "background.sh",
+            "code": "foreground.sh",
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Step-1: Installation",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step-2: Rappel sur les filtres",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step-3: Challenges",
+                "text": "step3.md"
+            },
+            {
+                "title": "Step-4: Comment travailler",
+                "text": "step4.md"
+            }
+
+
+        ],
+        "assets": {
+            "host01": [
+                {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            ]
+        }
+    },
+    "files": [],
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
