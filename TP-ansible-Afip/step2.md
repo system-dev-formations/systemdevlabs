@@ -11,8 +11,8 @@ Check de votre url
 git remote -v
 ```{{execute T1}}
 
-Creer sous Github person un repo nomme tp-afip-ansible
-Copier l'url  dans cette commande 
+Creer sous Github perso,  un repo nomme tp-afip-ansible
+Copier votre nouvelle url  dans cette commande 
 ```
 git remote set-url origin < votre url git du repo tp-afip-ansible
 ```
@@ -21,7 +21,7 @@ Verifier
 git remote -v
 ```{{execute T1}}
 
-Mettre a jour les variable de configuration de git  
+Mettre a jour les variables de configuration de git  
 ```
 git config --global user.mail " votre adresse mail"
 git config --global user.name "Votre Nom"
@@ -42,7 +42,7 @@ git push
 ```{{execute T1}}
 
 
-`
+
 
 
 

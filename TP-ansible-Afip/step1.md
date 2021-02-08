@@ -21,6 +21,8 @@ C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
 *  *-i inventory_katacoda* soumet ce fichier d'inventaire a Ansible
 
 ![architecture](./assets/architecture_ansible.png)
+
+Installation du  message of the day dans tous les hosts 
 ```
 ansible-playbook -i inventory_katacoda motd.yml
 ```{{execute T1}}
