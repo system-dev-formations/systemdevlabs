@@ -1,18 +1,27 @@
 {
-  "title": "Python Pour Debutant ",
-  "description": "Presentation de Python3",
+  "title": "Python pour Debutant ",
+  "description": "cours Python pour ecrire des filtres Ansible ",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Introduction a Python",
+        "title": "Verification de l'installation",
         "text": "check.md"
+      },
+      {
+        "title": "Premiere commandes",
+        "text": "commandes.md"
+      },
+      {
+        "title": "Gestion des chaines de caracteres",
+        "text": "chaines.md"
       }
     ],
-    "courseData": "background.sh",
-    "code": "foreground.sh",
-    "text": "intro.md"
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
