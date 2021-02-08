@@ -21,6 +21,11 @@ disk = []
 for i in line:
     if 'Disk /' in i:
         disk.append(i)
+```{{ execute T1}}
+
+Tapez enter pour valider le code   
+
+```
 print(disk)
 ```{{ execute T1}}
 
