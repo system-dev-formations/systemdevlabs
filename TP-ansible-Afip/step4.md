@@ -1,19 +1,49 @@
-## Les facts
+## Filtres
 
-Les facts sont des grosses structures de donnees qui sont echangees entre la machine
-`ansible controller` et les machines distantes. Ces structures de donnees contiennent 
-des informations comme: le nom de l'OS, la memoire, les cartes reseau ...etc  
-La commande suivante affiche l'interface IPV4 presente sur les hosts  
+Creez un fichier playbook nomme format_device.yml
+et copiez le code suivant
+```yaml
+---
+- name: format disk
+  become: true
+  hosts: localhost
+  tasks:
+  - name: get disk structure
+    become: true
+    command: fdisk -l
+    register: get_disk
+  - name: debug
+    debug:
+      msg: " device : {{ get_disk.stdout | get_device }}"
 ```
-ansible all -m setup -a "filter=ansible_default_ipv4"  -i inventory_katacoda
-```{{execute T1}}
 
-Avec cette commande on recherche le type de distribution   
+Mettre en place le filtre get_device
+faire 
 ```
-ansible all -m setup -a "filter=ansible_distribution"  -i inventory_katacoda
-```{{execute T1}}
+cd filter_plugins
+vi my_filters.py
+```{{ execute T1}}
 
-Avec cette commande on recherche la version de la distribution 
+Ajouter ces parties de code dans le fichier filter_plugins/myfilters.py 
 ```
-ansible all -m setup -a "filter=ansible_distribution_version"  -i inventory_katacoda
-```{{execute T1}}
+#en entete
+import subprocess
+# dans la fonction filters , ajoutez l'appel de notre filtre
+     'latest_version': self.latest_version,
+     'get_device': self.get_device
+# ne pas oublier la virgule a la fin de la ligne latest_version
+# ajout de votre fonction a la fin du script 
+def get_device(self,list_device):
+    return list_device
+```
+
+Verifier avec la commande suivante
+```
+ansible-playbook -i inventory format_device.yml
+```{{ execute T1}}
+
+FAITES DES COMMIT / PUSH REGULIER VOTRE SESSION EST VALIDE SEULEMENT
+POUR 1 HEURE
+
+
+

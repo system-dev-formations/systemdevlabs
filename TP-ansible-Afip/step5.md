@@ -1,17 +1,8 @@
-Quelques commandes utiles a connaitre
+Inserez dans le filtre le code que vous avez developpe pendant le cours python
 
-Liste les hosts dans le fichier inventory
-```
-ansible all --list-hosts -i inventory_katacoda
-```{{execute T1}}
+Placez des ```return nom_de_la_variable``` apres chaque boucle pour tester la valeur de retour
+
+une fois le code correct  
+modifiez le play_book
 
 
-Afficher l'etat des volumes disques
-```
-ansible all -m command -a "df -h" -i inventory_katacoda
-```{{execute T1}}
-
-Cree un fichier 
-```
-ansible centos -m file -a "dest=/home/centos/testfile state=touch" -i inventory_katacoda
-```{{execute T1}}

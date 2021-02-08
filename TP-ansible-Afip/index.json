@@ -26,8 +26,11 @@
             {
                 "title": "Step-4: Comment travailler",
                 "text": "step4.md"
+            },
+            {
+                "title": "Step-5: Debuggage",
+                "text": "step5.md"
             }
-
 
         ],
         "assets": {
