@@ -10,10 +10,12 @@ for i in line:
 for v in disk:
     inter = v.split()
     device.append(inter[1][:-1])
-```
+    
+print(device)
+```{{ execute T1}}
 
 Afficher le resultat
 ```
 print(device)
-```
+```{{ execute T1}}
 
