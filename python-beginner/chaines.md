@@ -9,13 +9,13 @@ print(alist)
 
 On obtient une liste ou tableau de 2 elements
 ```
-print alist[0]
+print(alist[0])
 ```{{execute T1 }}
 
 C'est le premier element
 
 ```
-print alist[1]
+print(alist[1])
 ```{{execute T1 }}
 
 C'est le deuxieme element

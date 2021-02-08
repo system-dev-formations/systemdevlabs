@@ -16,7 +16,14 @@
       {
         "title": "Gestion des chaines de caracteres",
         "text": "chaines.md"
+      },
+      {
+        "title": "Lecture d'un fichier",
+        "text": "fichier.md"
       }
+
+
+
     ],
     "intro": {
       "courseData": "background.sh",

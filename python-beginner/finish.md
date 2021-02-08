@@ -1,1 +1,1 @@
-Merci pour avoir utiliser ce lab 
+Merci d'avoir utiliser ce lab 
