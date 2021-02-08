@@ -20,8 +20,11 @@
       {
         "title": "Lecture d'un fichier",
         "text": "fichier.md"
+      },
+      {
+        "title": "Travail sur les listes",
+        "text": "liste.md"
       }
-
 
 
     ],

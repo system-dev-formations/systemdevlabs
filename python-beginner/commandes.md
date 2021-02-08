@@ -1,5 +1,5 @@
 
-Dans la console de python interactive faire les commandes suivante 
+Dans la console de python interactive faire les commandes suivantes: 
 ```
 1 + 2 
 ```{{execute T1}}
@@ -16,7 +16,6 @@ if 'Disk /' in a:
     print('ok')
 else:
     print('ko')
-
 ```{{ execute T1 }}
 
 Tapez Enter pour voir le resultat
