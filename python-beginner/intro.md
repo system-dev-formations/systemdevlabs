@@ -1,4 +1,4 @@
-[Python](https://www.python.org/) Python est un langage de programmation interprété,
+[Python](https://www.python.org/) est un langage de programmation interprété,
 multi-paradigme et multiplateformes. 
 Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. 
 Il est doté d'un typage dynamique fort, d'une gestion automatique
