@@ -1,8 +1,7 @@
-Avant de commencer, nous allons verifier si python3 est present
 
-### 
-Executez les commandes suivantes pour voir si docker est actif
+Creation d'une liste a partie d'une chaine de caracteres
 ```
-python3 version 
+alist = a.split()
+print alist
 ```{{execute T1}}
 

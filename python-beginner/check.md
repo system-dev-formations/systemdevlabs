@@ -6,7 +6,6 @@ Executez les commandes suivantes pour utiliser python
 python -V 
 ```{{execute T1}}
 
-```
 Et   
 
 ```

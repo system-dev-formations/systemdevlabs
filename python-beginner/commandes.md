@@ -10,4 +10,11 @@ a = " Disk /dev/vdd:"
 print(a)
 ```{{execute T1}}
 
+Recherche si des valeurs existent dans la chaine de caracteres
+```
+if 'Disk /' in a: 
+    print('ok')
+else:
+    print('ko')
+```{{ execute T1 }}
 
