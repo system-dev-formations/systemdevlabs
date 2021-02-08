@@ -2,7 +2,7 @@ Example d'algo
 ```
 disk = []
 device = [] 
-with open('fdisk_result.txt' as file: 
+with open('fdisk_result.txt') as file: 
     line = file.readlines()
 for i in line: 
     if 'Disk /' in i:

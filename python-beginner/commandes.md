@@ -16,6 +16,7 @@ if 'Disk /' in a:
     print('ok')
 else:
     print('ko')
+# affiche le resultat
 ```{{ execute T1 }}
 
 Tapez Enter pour voir le resultat
