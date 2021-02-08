@@ -28,5 +28,17 @@ Tapez enter pour valider le code
 ```
 print(disk)
 ```{{ execute T1}}
+La nouvelle liste contenant que des elements ayant "Disk /" 
+  
+Le premier element est 
+```
+print(disk[0])
+```{{ execute T1 }}
 
-Tapez enter pour voir le resultat  
+Si on fait un decoupage sur le caractere "," on peut isoler le disk en position 0
+```
+sol = disk[0].split(',)
+print(sol[0])
+```{{ execute T1}}
+  
+
