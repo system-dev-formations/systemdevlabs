@@ -10,8 +10,9 @@
         "text": "check.md"
       }
     ],
-    "intro": {
-      "text": "intro.md"
+    "courseData": "background.sh",
+    "code": "foreground.sh",
+    "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"

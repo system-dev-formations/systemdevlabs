@@ -1,7 +1,6 @@
-[Docker](https://www.docker.com/) est un software, ce n’est pas un langage de programmation, 
-c’est un ensemble d’outils pour construire des environnements d’exécution.
-Cet ensemble vous aide à résoudre les problèmes d’installation, de retour-arrière, 
-de distribution et de mise à jour de vos applications.
-Il est open source, c’est-à-dire que tout le monde peut contribuer à son développement.
-
-Ce tutorial vous permet d'apprendre les bases de Docker. 
+[Python](https://www.python.org/) Python est un langage de programmation interprété,
+multi-paradigme et multiplateformes. 
+Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. 
+Il est doté d'un typage dynamique fort, d'une gestion automatique
+de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; 
+il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
