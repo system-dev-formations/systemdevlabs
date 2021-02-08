@@ -24,8 +24,11 @@
       {
         "title": "Travail sur les listes",
         "text": "liste.md"
+      },
+      {
+        "title": "Construction de l'algorithme",
+        "text": "algo.md"
       }
-
 
     ],
     "intro": {
