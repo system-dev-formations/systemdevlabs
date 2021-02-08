@@ -7,9 +7,11 @@ python -V
 ```{{execute T1}}
 
 ```
-python
 ```
-Vous etes dans la console interactive de Python
-note: Pour sortir faire Ctrl-D
+python
+```{{execute T1}}
+
+Vous etes dans la console interactive de Python  
+Note: Pour sortir faire Ctrl-D
 
  
