@@ -1,10 +1,11 @@
 
 ### Verification de l'environment 
 
-Attendez que les containers soient installes  
-On change ensuite de directory  
+Attendez que les containers soient installes
 
-SI VOUS AVEZ DEJA FAIT CES ETAPES ALLEZ AU STEP 3
+ATTENTION : SI VOUS AVEZ DEJA FAIT CES ETAPES ALLEZ AU STEP 3
+
+On change ensuite de directory
 
 ```
 cd ansible-examples
