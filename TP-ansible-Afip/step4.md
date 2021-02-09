@@ -15,21 +15,6 @@ et copiez le code suivant
     - name: pour la mise au point
       debug:
         msg: " device : {{ get_disk.stdout | get_device }}"
-    #- name: prochaine etape, tester avec une list de device vide
-    #  vars:
-    #    device: "{{ get_disk.stdout | get_device }}"
-    #  shell: echo {{ item }}
-    #  when: device is defined 
-    #  loop: "{{ device }}"
-    #- name: format all relevant devices
-    #- name: Format disk
-    #  vars:
-    #    device: "{{ get_disk.stdout | get_device }}"
-    #  filesystem:
-    #    fstype: ext4
-    #    dev: {{ item }}
-    #  when: device is defined
-    #  loop: "{{ device }}
 ```
 
 Mettre en place le filtre get_device
@@ -57,8 +42,7 @@ Verifier avec la commande suivante
 ansible-playbook -i inventory format_device.yml
 ```{{ execute T1}}
 
-FAITES DES COMMIT / PUSH REGULIER VOTRE SESSION EST VALIDE SEULEMENT
-POUR 1 HEURE
+FAITES DES COMMIT / PUSH REGULIERS VOTRE SESSION EST ACTIVW POUR SEULEMENT 1 HEURE
 
 
 

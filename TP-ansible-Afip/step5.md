@@ -4,5 +4,6 @@ Placez des ```return nom_de_la_variable``` apres chaque boucle pour tester la va
 
 une fois le code correct  
 modifiez le play_book
-
+faite des recherches dans la documentation Ansible sur les gestions variables 
+et de loop. 
 

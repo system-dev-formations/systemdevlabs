@@ -27,9 +27,9 @@ et copiez le code suivant
     #    device: "{{ get_disk.stdout | get_device }}"
     #  filesystem:
     #    fstype: ext4
-    #    dev: {{ item }}
+    #    dev: "{{ item }}"
     #  when: device is defined
-    #  loop: "{{ device }}
+    #  loop: "{{ device }}":q
 ```
 
 Mettre en place le filtre get_device
