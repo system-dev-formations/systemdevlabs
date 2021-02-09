@@ -4,6 +4,8 @@
 Attendez que les containers soient installes  
 On change ensuite de directory  
 
+SI VOUS AVEZ DEJA FAIT CES ETAPES ALLEZ AU STEP 3
+
 ```
 cd ansible-examples
 ```{{execute T1}}
