@@ -1,14 +1,14 @@
 {
     "pathwayTitle": "TP Kubernetes Afip",
     "icon": "fa-kubernetes",
-    "title": "TP Kubernetes",
+    "title": "TP Kubernetes Afip",
     "description": "Learn Kubernetes",
     "time": "60 minutes",
     "difficulty": "Beginner",
     "details": {
         "steps": [
             {
-                "title" : "Retry a pod",
+                "title" : "Installation du cluster",
                 "text": "step1.md"
             },
             {
@@ -24,8 +24,8 @@
                 "text": "step4.md"
             },
             {
-                "title" : "Installation d'Helm",
-                "text": "step9.md"
+                "title" : "Les scripts YAML",
+                "text": "step5.md"
             },
             {
                 "title" : "Configuration d'Helm",

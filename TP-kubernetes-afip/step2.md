@@ -16,7 +16,7 @@ k taint nodes --all node-role.kubernetes.io/master-
 
 ### Vérification 
 Nous allons deployer un objet de type DaemonSet qui se place sur tous les nodes du cluster. 
-Comme le master accepte maitenant les objets Kubernetes, nous devons avoir 2 DaemonSets deployés.
+Comme le master accepte maintenant les objets Kubernetes, nous devons avoir 2 DaemonSets deployés.
 
 ```
 kubectl create deploy nginx --image=nginx --dry-run=client -o yaml | 
@@ -33,5 +33,5 @@ kubectl apply -f nginx-ds.yaml
 ```
 kubectl get pod -o wide
 ```{{execute T1}}
-
+On voit que les pod Daemon sont presents sur le controlplane et le node01
 
