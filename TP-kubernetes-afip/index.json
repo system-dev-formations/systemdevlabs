@@ -1,0 +1,63 @@
+{
+    "pathwayTitle": "TP Kubernetes Afip",
+    "icon": "fa-kubernetes",
+    "title": "TP Kubernetes",
+    "description": "Learn Kubernetes",
+    "time": "60 minutes",
+    "difficulty": "Beginner",
+    "details": {
+        "steps": [
+            {
+                "title" : "Retry a pod",
+                "text": "step1.md"
+            },
+            {
+                "title" : "Modification du Master",
+                "text": "step2.md"
+            },
+            {
+                "title" : "Premier deployement",
+                "text": "step3.md"
+            },
+            {
+                "title" : "Le Pod",
+                "text": "step4.md"
+            },
+            {
+                "title" : "Installation d'Helm",
+                "text": "step9.md"
+            },
+            {
+                "title" : "Configuration d'Helm",
+                "text": "step10.md"
+            },
+            {
+                "title" : "Installer Mysql avec Helm",
+                "text": "step11.md"
+            }
+        ],
+        "intro": {
+            "courseData": "background.sh",
+            "code": "foreground.sh",
+            "text": "intro.md",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+
+        "assets": {
+            "host01": [ {"file": "*", "target": "/root", "chmod": "+x" } ],            
+            "node01": [ {"file": "*", "target": "/root", "chmod": "+x" } ],
+            "node02": [ {"file": "*", "target": "/root", "chmod": "+x" } ],
+            "node03": [ {"file": "*", "target": "/root", "chmod": "+x" } ]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}
