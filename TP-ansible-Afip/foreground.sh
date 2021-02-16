@@ -1,5 +1,5 @@
 apt update
-apt -y install ansible python
+apt -y install ansible
 pip3 install natsort
 docker run -d --name target1 systemdevformations/ubuntu_ssh:v2
 docker run -d --name target2 systemdevformations/centos_ssh:v5
