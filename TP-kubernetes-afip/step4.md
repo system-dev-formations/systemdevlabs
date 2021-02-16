@@ -47,3 +47,12 @@ Voir les differences
 diff first.yaml second.yaml 
 ```{{execute T1 }}
 
+Le fichier first.yaml est tres verbeux. 
+le fichier second.yaml est notre fichier de travail
+```
+cat second.yaml
+```{{ execute T1}}
+
+
+
+
