@@ -42,7 +42,7 @@ Verifier avec la commande suivante
 ansible-playbook -i inventory format_device.yml
 ```{{ execute T1}}
 
-FAITES DES COMMIT / PUSH REGULIERS VOTRE SESSION EST ACTIVW POUR SEULEMENT 1 HEURE
+FAITES DES COMMIT / PUSH REGULIERS VOTRE SESSION EST ACTIVE POUR SEULEMENT 1 HEURE
 
 
 
