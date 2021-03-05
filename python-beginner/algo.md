@@ -2,6 +2,12 @@ Example d'algo dans ce programme get_device.py
 
 Faire Ctrl-d pour sortie du prompt interactif
 
+lancer nano ou vi 
+```
+vi get_device.py
+```{{execute T1 }}
+Tapez i 
+
 Nous allons analyser le code suivant,  
 faite des recherches et executez des parties de code en interatif
 ```
@@ -31,13 +37,9 @@ for v in disk:
 print(device)
 ```{{ copy }}
 
-lancer nano ou vi 
-```
-vi get_device.py
-```{{execute T1 }}
-
-Copier et coller ce code dans un fichier nomme get_device.py
-et taper 
+Paste dans l'editeur 
+Tapez Esc et :wq
+ 
 ```python
 python get_device.py
 ```{{ execute T1 }} 
