@@ -2,9 +2,9 @@ Example d'algo dans ce programme get_device.py
 
 Faire Ctrl-d pour sortie du prompt interactif
 
-Analysez le code suivant, faite des recherches et executez des parties
-de code en interatif
-```python
+Nous allons analyser le code suivant,  
+faite des recherches et executez des parties de code en interatif
+```
 import subprocess
 disk = []
 device = []
@@ -29,7 +29,12 @@ for v in disk:
         flag = 0
     flag = 0
 print(device)
+```{{ copy }}
+
+lancer nano ou vi 
 ```
+vi get_device.py
+```{{execute T1 }}
 
 Copier et coller ce code dans un fichier nomme get_device.py
 et taper 
