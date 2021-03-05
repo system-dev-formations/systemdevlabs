@@ -14,7 +14,7 @@ cd ansible-examples
 
 et on execute la commande suivante pour verifier l'installation
 ```
-ansible all -m ping -i inventory_katacoda
+ansible all -m ping -i inventory_local
 ```{{execute T1}}
 
 C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
@@ -27,5 +27,5 @@ C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
 
 Installation du  message of the day dans tous les hosts 
 ```
-ansible-playbook -i inventory_katacoda motd.yml
+ansible-playbook -i inventory_local motd.yml
 ```{{execute T1}}
