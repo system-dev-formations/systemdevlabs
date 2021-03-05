@@ -11,12 +11,14 @@ Check de votre url
 git remote -v
 ```{{execute T1}}
 
-Creer sous Github perso,  un repo nomme tp-afip-ansible
+Creer sous Github perso,  un repo nomme tp-aston-ansible
+sans README.md, .gitignore, LICENSE
 Copier votre nouvelle url  dans cette commande 
 ```
-git remote set-url origin < votre url git du repo tp-afip-ansible
-```
-Verifier 
+git remote set-url origin < votre url git du repo>
+``` {{ copy }}
+
+Verifier
 ```
 git remote -v
 ```{{execute T1}}
@@ -24,8 +26,11 @@ git remote -v
 Mettre a jour les variables de configuration de git  
 ```
 git config --global user.email " votre adresse mail"
-git config --global user.name "Votre Nom"
+```{{ copy }}
 ```
+git config --global user.name "Votre Nom"
+``` {{ copy }}
+
 faire un 
 ```
 git add . 
