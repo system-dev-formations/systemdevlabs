@@ -1,8 +1,8 @@
-Example d'algo dans ce programme get_device.py
+Exemple d'algo dans ce programme get_device.py
 
-Faire Ctrl-d pour sortie du prompt interactif
+Faire Ctrl-d pour sortir du prompt interactif
 
-lancer nano ou vi 
+lancer vi 
 ```
 vi get_device.py
 ```{{execute T1 }}
