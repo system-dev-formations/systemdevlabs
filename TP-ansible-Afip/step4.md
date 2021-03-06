@@ -3,7 +3,7 @@
 Faire 
 ```
 cd ~/tp-aston-ansible && vi format_device.yml
-```
+``` {{ execute T1}}
 
 Faire i 
 et pressez sur copy dans le clipboard

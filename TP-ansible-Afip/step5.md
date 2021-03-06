@@ -1,9 +1,42 @@
-Inserez dans le filtre le code que vous avez developpe pendant le cours python
+Allez dans le fichier my_filter
 
-Placez des ```return nom_de_la_variable``` apres chaque boucle pour tester la valeur de retour
+```
+cd filter_plugins && vi my_filters.py
+```{{ execute T1}}
 
-une fois le code correct   
-modifiez le playbook  
-faire des recherches dans la documentation Ansible sur les gestions variables   
-et des loop avec variables.  
+inserer a la place de ```return list_device``` 
+```
+   disk = []
+   device = []
+   flag = 0
+   type_format = ['swap','ext4','xfs','dos']
+   line = list_device.split('\n')
+   return line
+``` {{ copy }}   
 
+Tester avec 
+```
+cd ~/tp-aston-ansible &&
+ansible-playbook -i inventory format_device.yml
+```{{ execute T1}}
+
+inserer a la place de ```return line``` 
+```
+   #return line
+   for i in line:
+     if 'Disk /' in i:
+        disk.append(i)
+   return disk
+``` {{ copy }}
+
+inserer a la place de ```return disk```
+```
+   #return disk
+   for v in disk:
+       inter = v.split()
+       cmd = "lsblk -f {}".format(inter[1][:-1])
+       #print(cmd)
+       check_blk = str(subprocess.check_output(cmd,shell=True))
+       return check_blk
+``` {{copy}}
+   

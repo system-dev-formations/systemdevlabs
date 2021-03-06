@@ -1,0 +1,40 @@
+{
+  "title": "Image from iso ",
+  "description": "How to create an image from an iso",
+  "difficulty": "Intermediate",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "docker registry",
+        "text": "registry.md"
+      },
+      {
+        "title": "Clean up",
+        "text": "nettoyage.md"
+      },
+      {
+        "title": "Send an image to docker hub",
+        "text": "docker_hub.md"
+      },
+      {
+        "title": "Create an image from an ISO",
+        "text": "iso.md"
+      }
+
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour interactive bash.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
