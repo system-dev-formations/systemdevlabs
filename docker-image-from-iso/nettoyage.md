@@ -1,13 +1,12 @@
-Commande pour nettoyer notre environnement
-### Nettoyage des containers
+Clean up the environment
 ```
 docker rm -f $(docker ps -aq)
 ```{{execute T1}}
-on soumet a ```docker rm -f``` la liste des containers uuid avec ps -aq 
+we apply ```docker rm -f```  to the list of uuid containers with  -aq 
 
-### Nettoyage des images   
+### Images clean up  
 ```
 docker rmi -f $(docker images -q)
 ```{{execute T1}}
-On soumet a ```docker rmi -f ``` la liste des images uuid avec images -q
+We apply  ```docker rmi -f ``` to the list of uuid images with -q
 
