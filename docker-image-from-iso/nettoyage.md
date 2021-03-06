@@ -1,4 +1,4 @@
-Clean up the environment
+Container clean up the environment
 ```
 docker rm -f $(docker ps -aq)
 ```{{execute T1}}

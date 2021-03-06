@@ -10,18 +10,17 @@
         "text": "registry.md"
       },
       {
-        "title": "Clean up",
-        "text": "nettoyage.md"
-      },
-      {
         "title": "Send an image to docker hub",
         "text": "docker_hub.md"
+      },
+      {
+        "title": "Clean up",
+        "text": "nettoyage.md"
       },
       {
         "title": "Create an image from an ISO",
         "text": "iso.md"
       }
-
     ],
     "intro": {
       "text": "intro.md"
