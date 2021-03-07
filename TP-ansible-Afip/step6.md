@@ -14,7 +14,7 @@ et coller la partie de script a la suite
   shell: echo {{ item }}
   when: device is defined 
   loop: "{{ device }}"
- ```{{ execute T1 }}
+ ```{{ copy }}
  
 faire i et pressez sur copy dans le clipboard
 et coller la partie de script a la suite 
@@ -27,5 +27,5 @@ et coller la partie de script a la suite
     dev: "{{ item }}"
   when: device is defined 
   loop: "{{ device }}"
- ```{{ execute T1 }}
+ ```{{ copy }}
   
