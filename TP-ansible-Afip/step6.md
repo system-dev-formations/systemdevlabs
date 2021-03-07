@@ -16,6 +16,13 @@ et coller la partie de script a la suite
   loop: "{{ device }}"
  ```{{ copy }}
  
+ Test
+ ```
+ cd ~/tp-aston-ansible && 
+ ansible-playbook -i inventory format_device.yml
+```{{ execute T1 }}
+ 
+ 
 faire i et pressez sur copy dans le clipboard
 et coller la partie de script a la suite 
 ```
@@ -28,4 +35,9 @@ et coller la partie de script a la suite
   when: device is defined 
   loop: "{{ device }}"
  ```{{ copy }}
-  
+ 
+ Test
+ ```
+ cd ~/tp-aston-ansible && 
+ ansible-playbook -i inventory format_device.yml
+```{{ execute T1 }} 
