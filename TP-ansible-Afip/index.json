@@ -1,6 +1,6 @@
 {
     "noindex": true,
-    "title": "TP-Ansible-Afip",
+    "title": "TP-Ansible-filtre",
     "description": "Rappel des commandes et ecriture d'un filtre ansible",
     "difficulty": "Intermediate",
     "time": "60 minutes",
@@ -28,7 +28,7 @@
                 "text": "step4.md"
             },
             {
-                "title": "Step-5: Debuggage",
+                "title": "Step-5: Mise au point du script ",
                 "text": "step5.md"
             }
 
