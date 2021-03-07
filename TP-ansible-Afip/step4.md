@@ -1,4 +1,3 @@
-## Filtres
 
 Faire 
 ```
@@ -7,6 +6,7 @@ cd ~/tp-aston-ansible && vi format_device.yml
 
 Faire i 
 et pressez sur copy dans le clipboard
+et click droit paste
 
 ```
 ---

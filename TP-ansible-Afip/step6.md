@@ -1,16 +1,31 @@
-Faites un `cat` du fichier suivant:
+
+Faire
+
 ```
-cat ansible_ping.yml
-```{{execute T1}}
+cd ~/tp-aston-ansible && vi format_device.yml
+``` {{ execute T1 }}
 
-Premier playbook
+faire i et pressez sur copy dans le clipboard
+et coller la partie de script a la suite 
 ```
-ansible-playbook  -i inventory_katacoda ansible_ping.yml  --limit centos
-```{{execute T1}}
-
-C'est notre premiere commande ansible-playbook
-*  *ansible-playbook*   c'est le nom du programme
-*  *-i inventory_katacoda* soumet ce fichier d'inventaire a ansible-playbook
-*  *ansible_ping.yml* le nom du fichier playbook
-*  *--limit centos*  dans le playbook `hosts` est precise pour `all`, ici on limite le script seulement a la machine centos. 
-
+- name: prochaine etape, tester avec une liste de device vide 
+  vars:
+    device: "{{ get_disk.stdout | get_device }}"
+  shell: echo {{ item }}
+  when: device is defined 
+  loop: "{{ device }}"
+ ```{{ execute T1 }}
+ 
+faire i et pressez sur copy dans le clipboard
+et coller la partie de script a la suite 
+```
+- name: format disk 
+  vars:
+    device: "{{ get_disk.stdout | get_device }}"
+  filesystem:
+    fstype: ext4
+    dev: "{{ item }}"
+  when: device is defined 
+  loop: "{{ device }}"
+ ```{{ execute T1 }}
+  
