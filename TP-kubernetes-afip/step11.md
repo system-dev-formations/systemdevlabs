@@ -31,7 +31,7 @@ MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="
 
 ### Installer le client Mysql 
 ```
-apt-get install -y mysql-client-core-5.7
+apt-get install -y mysql-client-core-5.7 mariadb-client-core-10.1
 ```{{ execute T1}}
 
 ### Faire un port-forward du port de mysql 

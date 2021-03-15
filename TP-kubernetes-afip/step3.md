@@ -21,6 +21,6 @@ Plus d'informations sur le déploiement
 
 Affichage des pods
 ```
-k describe pod
+k get pod
 ```{{ execute T1 }}
 

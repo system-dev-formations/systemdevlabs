@@ -24,7 +24,12 @@ et coller la partie de script a la suite
  
  
 faire i et pressez sur copy dans le clipboard
-et coller la partie de script a la suite 
+et coller la partie de script a la suite
+
+```
+cd ~/tp-aston-ansible && vi format_device.yml
+``` {{ execute T1 }}
+ 
 ```
 - name: format disk 
   vars:
