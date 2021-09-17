@@ -34,6 +34,6 @@
     "uimessage1": "\u001b[32mYour interactive bash.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu:2004"
   }
 }
