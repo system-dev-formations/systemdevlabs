@@ -6,7 +6,7 @@ FROM ubuntu
 CMD ["sleep","5"]
 ```{{ copy }}
 
-faire la commande suivante pour builder l'image
+faire la commande suivante pour creer l'image
 ```
 docker build -t test-cmd -f dockerfile-cmd . 
 ```{{execute T1}}
