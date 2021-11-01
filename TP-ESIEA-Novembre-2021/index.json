@@ -10,7 +10,7 @@
         "text": "pre-requis.md"
       },
       {
-        "title": "Installation de Kind",
+        "title": "Installation de Kind ( Kubernetes in Docker) ",
         "text": "kind.md"
       }
     ],

@@ -25,7 +25,7 @@ git clone https://github.com/system-dev-formations/k8s-webforce3.git
 
 changement de directory
 ```
-cd k8s-webforce3
+cd k8s-webforce3/lab-kind
 ```{{execute T1}}
 
 Installation du cluster kubernetes a partir du fichier kind-config.yml
