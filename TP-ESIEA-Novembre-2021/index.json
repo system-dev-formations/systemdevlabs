@@ -1,0 +1,27 @@
+{
+  "title": "TP-ESIEA-Novembre 2021",
+  "description": "Tp ",
+  "difficulty": "Intermediate",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Pre-requis",
+        "text": "pre-requis.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVotre bash en interactif.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
