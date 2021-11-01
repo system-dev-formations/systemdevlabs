@@ -12,7 +12,12 @@
       {
         "title": "Installation de Kind ( Kubernetes in Docker) ",
         "text": "kind.md"
+      },
+      {
+        "title": "Installation de kubectl",
+        "text": "kubectl.md"
       }
+
     ],
     "intro": {
       "text": "intro.md"
