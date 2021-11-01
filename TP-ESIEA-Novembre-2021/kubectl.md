@@ -8,3 +8,21 @@ Installer kubectl application
 ```
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```{{execute T1}}
+
+Check
+```
+kubectl version
+```{{execute T1}}
+
+Alias
+```
+alias k='kubectl'
+```{{execute T1}}
+
+
+Check cluster
+```
+k get node
+```{{execute T1}}
+
+
