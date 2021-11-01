@@ -1,6 +1,3 @@
-
-### Pre-requis
-
 Installer le repo todo-flask-postgres
 ```
 git clone https://github.com/system-dev-formations/todo-flask-postgres.git
@@ -23,7 +20,7 @@ python3 -m venv venv && source venv/bin/activate
  
 Installation des paquets pip3 pour ansible et docker-compose
 ```
-pip3 install wheel ansible docker-compose
+pip3 install wheel && pip3 install ansible  && pip3 install docker-compose
 ```{{execute T1}} 
 
 Verifier la version d'ansible
