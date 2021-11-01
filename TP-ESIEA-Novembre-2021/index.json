@@ -8,6 +8,10 @@
       {
         "title": "Pre-requis",
         "text": "pre-requis.md"
+      },
+      {
+        "title": "Installation de Kind",
+        "text": "kind.md"
       }
     ],
     "intro": {
