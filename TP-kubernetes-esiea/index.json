@@ -30,14 +30,6 @@
             {
                 "title" : "Metrics",
                 "text": "step6.md"
-            },
-            {
-                "title" : "Configuration d'Helm",
-                "text": "step10.md"
-            },
-            {
-                "title" : "Installer Mysql avec Helm",
-                "text": "step11.md"
             }
         ],
         "intro": {
