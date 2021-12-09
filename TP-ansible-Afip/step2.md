@@ -11,7 +11,7 @@ Check de votre url
 git remote -v
 ```{{execute T1}}
 
-Creer sous Github perso,  un repo nomme tp-aston-ansible
+Creer sous Github perso,  un repo nomme tp-ansible
 sans README.md, .gitignore, LICENSE
 Copier votre nouvelle url  dans cette commande 
 ```

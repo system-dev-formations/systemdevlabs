@@ -2,7 +2,7 @@
 Faire
 
 ```
-cd ~/tp-aston-ansible && vi format_device.yml
+cd ~/tp-ansible && vi format_device.yml
 ``` {{ execute T1 }}
 
 faire i et pressez sur copy dans le clipboard
@@ -18,7 +18,7 @@ et coller la partie de script a la suite
  
  Test
  ```
- cd ~/tp-aston-ansible && 
+ cd ~/tp-ansible && 
  ansible-playbook -i inventory format_device.yml
 ```{{ execute T1 }}
  
@@ -27,7 +27,7 @@ faire i et pressez sur copy dans le clipboard
 et coller la partie de script a la suite
 
 ```
-cd ~/tp-aston-ansible && vi format_device.yml
+cd ~/tp-ansible && vi format_device.yml
 ``` {{ execute T1 }}
  
 ```
@@ -43,6 +43,6 @@ cd ~/tp-aston-ansible && vi format_device.yml
  
  Test
  ```
- cd ~/tp-aston-ansible && 
+ cd ~/tp-ansible && 
  ansible-playbook -i inventory format_device.yml
 ```{{ execute T1 }} 

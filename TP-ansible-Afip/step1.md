@@ -8,7 +8,7 @@ ATTENTION : SI VOUS AVEZ DEJA FAIT CES ETAPES ALLEZ AU STEP 3
 On change ensuite de directory
 
 ```
-cd ansible-examples
+cd ansible-course
 ```{{execute T1}}
 
 

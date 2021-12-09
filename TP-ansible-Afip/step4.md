@@ -1,7 +1,7 @@
 
 Faire 
 ```
-cd ~/tp-aston-ansible && vi format_device.yml
+cd ~/tp-ansible && vi format_device.yml
 ``` {{ execute T1}}
 
 Faire i 
@@ -71,7 +71,7 @@ Faire Esc et :qw pour sauver le fichier
 
 Verifier avec la commande suivante
 ```
-cd ~/tp-aston-ansible &&
+cd ~/tp-ansible &&
 ansible-playbook -i inventory format_device.yml
 ```{{ execute T1}}
 
