@@ -25,7 +25,3 @@ C'est notre premiere commande Ansible qui se nomme Ad-Hoc command
 
 ![architecture](./assets/architecture_ansible.png)
 
-Installation du  message of the day dans tous les hosts 
-```
-ansible-playbook -i inventory_local motd.yml
-```{{execute T1}}
