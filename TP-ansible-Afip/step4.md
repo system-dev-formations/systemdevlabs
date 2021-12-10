@@ -72,7 +72,7 @@ Faire Esc et :qw pour sauver le fichier
 Verifier avec la commande suivante
 ```
 cd ~/tp-ansible &&
-ansible-playbook -i inventory format_device.yml
+ansible-playbook -i inventory_local format_device.yml
 ```{{ execute T1}}
 
 FAITES DES COMMIT / PUSH REGULIERS VOTRE SESSION EST ACTIVE POUR SEULEMENT 1 HEURE

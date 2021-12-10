@@ -10,7 +10,7 @@ cat runtime_inventory_additions.yml
 
 Passage de variables
 ```
-ansible-playbook -i inventory_katacoda runtime_inventory_additions.yml
+ansible-playbook -i inventory_local runtime_inventory_additions.yml
 ```{{execute T1}}
 
 Verfications ,en entrant dans le container centos 

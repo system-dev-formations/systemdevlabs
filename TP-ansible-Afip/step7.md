@@ -5,7 +5,7 @@ cat ansible_facts_using_when.yml
 
 Test avec when 
 ```
-ansible-playbook -i inventory_katacoda ansible_facts_using_when.yml
+ansible-playbook -i inventory_local ansible_facts_using_when.yml
 ```{{execute T1}}
 
 Analyse du fichier
@@ -15,5 +15,5 @@ cat ansible_facts_using_assert.yml
 
 Test avec assert 
 ```
-ansible-playbook -i inventory_katacoda ansible_facts_using_assert.yml
+ansible-playbook -i inventory_local ansible_facts_using_assert.yml
 ```{{execute T1}}

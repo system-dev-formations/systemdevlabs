@@ -16,8 +16,8 @@ inserer a la place de ```return list_device```
 
 Tester avec 
 ```
-cd ~/tp-aston-ansible &&
-ansible-playbook -i inventory format_device.yml
+cd ~/tp-ansible &&
+ansible-playbook -i inventory_local format_device.yml
 ```{{ execute T1}}
 
 inserer a la place de ```return line``` 
