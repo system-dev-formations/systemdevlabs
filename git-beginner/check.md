@@ -16,7 +16,7 @@ git init
 ```{{execute T1}}
 ## Set your email and user name
 ```
-git config --global user.mail "dockerlite@gmail.com"
+git config --global user.email "dockerlite@gmail.com"
 ```{{execute T1}}
 and
 ```
