@@ -1,9 +1,9 @@
-Avant de commencer, nous allons verifier si docker est present
+We are going to check our environment
 
-### Verifier si docker est actif
-Executez les commandes suivantes pour voir si docker est actif
+### check if git is installed
+Hit the following command for checking git version 
 ```
-docker version 
+git --version 
 ```{{execute T1}}
 et 
 ```

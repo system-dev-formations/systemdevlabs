@@ -1,12 +1,12 @@
 {
-  "title": "Git Pour Debutant ",
-  "description": "Presentation de Git",
+  "title": "Git for Beginners",
+  "description": "Overview of git",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Introduction a Git",
+        "title": "Pre-requisites",
         "text": "check.md"
       },
       {

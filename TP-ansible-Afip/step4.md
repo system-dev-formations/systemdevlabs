@@ -29,7 +29,7 @@ faire
 cd filter_plugins && vi my_filters.py
 ```{{ execute T1}}
 
-Faire i , mettre le curseur sur la premiere ligne 
+M:ettre le curseur sur la premiere ligne 
 Faire Esc et dd pour effacer les lignes
 
 Ajouter la partie de code dans le fichier myfilters.py
