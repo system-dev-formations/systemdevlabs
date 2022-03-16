@@ -1,26 +1,28 @@
 We are going to check our environment
 
-### check if git is installed
-Hit the following command for checking git version 
+## Check whether git is installed
+Hit the following command for getting the git version 
 ```
 git --version 
 ```{{execute T1}}
-et 
+## Create a project 
 ```
-docker ps  
+mkdir project && cd project
 ```{{execute T1}}
 
-### Premier container : Hello world 
+## Git init 
 ```
-docker run docker/whalesay cowsay Hello-world!
+git init
+```{{execute T1}}
+## Set your email and user name
+```
+git config --global user.mail "dockerlite@gmail.com"
+```{{execute T1}}
+and
+```
+git config --global user.name "Herve"
 ```{{execute T1}}
 
-### Voir l'etat de containers dans votre localhost
-```
-docker ps -a
-```{{execute T1}}
 
-### Voir la liste des images presentes sur votre localhost
-```
-docker images 
-```{{execute T1}}
+
+
