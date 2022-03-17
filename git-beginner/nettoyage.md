@@ -1,13 +1,14 @@
-Commande pour nettoyer notre environnement
-### Nettoyage des containers
-```
-docker rm -f $(docker ps -aq)
-```{{execute T1}}
-on soumet a ```docker rm -f``` la liste des containers uuid avec ps -aq 
+How to manage our project in github 
+## create a github project
 
-### Nettoyage des images   
+## Check our current branch main
 ```
-docker rmi -f $(docker images -q)
+git branch 
 ```{{execute T1}}
-On soumet a ```docker rmi -f ``` la liste des images uuid avec images -q
+ 
+## Rename branch to be suitable to Github    
+```
+git branch -m main 
+```{{execute T1}}
+
 
