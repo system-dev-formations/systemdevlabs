@@ -16,6 +16,10 @@
       {
         "title": "Learning Github",
         "text": "github.md"
+      },
+      {
+        "title": "3 versions of a file",
+        "text": "three_versions.md"
       }
     ],
     "intro": {

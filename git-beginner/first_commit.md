@@ -1,7 +1,7 @@
 Enter a text in file test.py
 
 ```
-echo "test" > test.py
+echo "version 1" > test.py
 ```{{execute T1}}
 
 Add the file in workspace 

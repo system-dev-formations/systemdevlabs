@@ -1,11 +1,10 @@
 How to manage our project in github   
 
-In your gitub account, create a new repository named git-airbus  
-Select Public, don't check README, .gitignore , License  
-
-
+In your gitub account, create a new repository named **git-airbus**  
+Select Public, don't check README, .gitignore  and License  
 
 ## Create a github project
+
 
 ## Check our current branch main
 ```
