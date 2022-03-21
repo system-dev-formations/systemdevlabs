@@ -18,9 +18,16 @@
         "text": "github.md"
       },
       {
-        "title": "3 versions of a file",
+        "title": "Git Promotion Model",
         "text": "three_versions.md"
+      },
+      {
+        "title": "Commands porcelain vs plumbing",
+        "text": "porcelain.md"
       }
+
+
+
     ],
     "intro": {
       "text": "intro.md"
