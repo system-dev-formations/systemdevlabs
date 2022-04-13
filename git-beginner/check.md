@@ -10,18 +10,38 @@ git --version
 mkdir project && cd project
 ```{{execute T1}}
 
-## Git init 
+## Create a file and insert a text
+```
+echo " it's a text" >> test.txt
+```{{execute T1}}
+
+## Check the git status 
+```
+git status
+```{{execute T1}}
+
+This directory is not under git control
+
+## Git init
+The way to move a directory to be tracked by git is to type git init  
 ```
 git init
 ```{{execute T1}}
-## Set your email and user name
+
+## Check what is going on 
+```
+git status
+```{{execute T1}}
+
+## Give some info regarding your identity 
+Set your email and user name
 ```
 git config --global user.email "dockerlite@gmail.com"
-```{{execute T1}}
+```{{ copy }}
 and
 ```
 git config --global user.name "Herve"
-```{{execute T1}}
+```{{ copy }}
 
 
 

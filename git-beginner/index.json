@@ -1,5 +1,5 @@
 {
-  "title": "Git for Beginners",
+  "title": "Git for Beginners AIRBUS -Avril 2022",
   "description": "Overview of git",
   "difficulty": "Beginner",
   "time": "60 minutes",
@@ -22,7 +22,7 @@
         "text": "three_versions.md"
       },
       {
-        "title": "Commands porcelain vs plumbing",
+        "title": "Commands porcelain and plumbing",
         "text": "porcelain.md"
       }
 
