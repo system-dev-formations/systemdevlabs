@@ -18,15 +18,25 @@ git status
 echo "version 3" >> test.py
 ```{{execute T1}}
 
-Check 
+## Check
+So now we got 3 differents version of test.py  
+The file in the local repo contains version 1 text
+in staging area we have the version 1 and version2 text 
+last, in working directory the file contains version 1, 2,3 text
+
 ```
 git status
 ```{{execute T1}}
 
-Edit diff between committed file and staged file 
+## Edit diff between committed or local repo file and staged file 
 ```
 git diff --cached 
 ```{{execute T1}}
+
+## check diff file between working directory and local repo file
+
+
+
 
 Apply new version 
 ```
@@ -40,5 +50,5 @@ git add test.py
 
 Apply version 3
 ```
-git commit -m"version 3 now"
+git commit -m"version 3 is there now"
 ```{{execute T1}}

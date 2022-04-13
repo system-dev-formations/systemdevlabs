@@ -12,7 +12,7 @@ mkdir project && cd project
 
 ## Create a file and insert a text
 ```
-echo " it's a text" >> test.txt
+echo " it's a text" >> test.py
 ```{{execute T1}}
 
 ## Check the git status 
