@@ -5,9 +5,22 @@ Hit the following command for getting the git version
 ```
 git --version 
 ```{{execute T1}}
+## Find  the latest version of git
+```
+cd git
+```{{ execute T1 }}
+
+## Display all version of git 
+```
+git tag --sort=-creatordate --format='%(creatordate:short)%09%(refname:strip=2)'
+```{{ execute T1 }}
+** Type q **
+This command is quite complicated, you can get the date of the latest version and the delta between 
+your current version available on your system , this is a commnon job that your sysadmin should do.
+
 ## Create a project 
 ```
-mkdir project && cd project
+cd ~ && mkdir project && cd project
 ```{{execute T1}}
 
 ## Create a file and insert a text
