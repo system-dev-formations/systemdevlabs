@@ -10,13 +10,13 @@ git --version
 cd git
 ```{{ execute T1 }}
 
-## Display all version of git 
+## Display all git version available 
 ```
 git tag --sort=-creatordate --format='%(creatordate:short)%09%(refname:strip=2)'
 ```{{ execute T1 }}
-** Type q **
+** Type q **  for getting out of this command 
 This command is quite complicated, you can get the date of the latest version and the delta between 
-your current version available on your system , this is a commnon job that your sysadmin should do.
+your current version available on your system , this is a common job that your sysadmin should do.
 
 ## Create a project 
 ```
@@ -46,16 +46,17 @@ git init
 git status
 ```{{execute T1}}
 
-## Give some info regarding your identity 
+## Give some info to git regarding your identity 
 Set your email and user name
 ```
 git config --global user.email "dockerlite@gmail.com"
 ```{{ copy }}
-and
+Right click on the console and paste  
+Change the email address   
 ```
 git config --global user.name "Herve"
 ```{{ copy }}
-
-
+Right-click on the console and paste   
+Put your name   
 
 
