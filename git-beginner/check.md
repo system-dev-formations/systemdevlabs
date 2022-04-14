@@ -14,7 +14,8 @@ cd git
 ```
 git tag --sort=-creatordate --format='%(creatordate:short)%09%(refname:strip=2)'
 ```{{ execute T1 }}
-** Type q **  for getting out of this command 
+** Type q **   for getting out of this command  
+   
 This command is quite complicated, you can get the date of the latest version and the delta between 
 your current version available on your system , this is a common job that your sysadmin should do.
 

@@ -1,7 +1,7 @@
 Enter a text in file test.py
 
 ```
-echo "version 1" > test.py
+echo "version 1" >> test.py
 ```{{execute T1}}
 
 Add the file in workspace 
@@ -19,7 +19,7 @@ check the git log file
 git log
 ```{{execute T1}}
 
-display on on line
+display one line only
 ```
 git log --oneline
 ```{{execute T1}}

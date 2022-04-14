@@ -1,7 +1,7 @@
-How to manage our project in github   
+How to manage a project in github   
 
 In your gitub account, create a new repository named **git-airbus**   
-Select Public, don't check README, .gitignore  and License    
+Select Public, check README, .gitignore  and License    
 
 ## Go to your home directory
 ```shell
@@ -23,15 +23,18 @@ cd git-airbus
 git remote -v
 ```{{ execute T1 }}
 
+"origin" is a local alias name for the remote repository that a project was originally cloned from. 
+Now your local repo is connected to the remote one.
 
-## Check our current branch main
-```
-git branch 
-```{{execute T1}}
- 
-## Rename our branch to be suitable to Github    
-```
-git branch -m main 
-```{{execute T1}}
+## Convert an existing git repo to github
+In your gitub account, create a new repository named **git-test**   
+Select Public, don't check README, .gitignore  and License 
+Get the URL of this repo by typing on the green button
+```shell
+cd ~ && cd project 
+```{{ execute T1 }}
 
-
+Change the remote url accordlingly
+```shell
+git remote set-url origin https://github.com/crunchy-devops/git-test.git
+```{{ copy }}
