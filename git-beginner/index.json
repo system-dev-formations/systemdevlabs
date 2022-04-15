@@ -26,6 +26,10 @@
         "text": "three_versions.md"
       },
       {
+        "title": "Remove files",
+        "text": "remove_file.md"
+      },
+      {
         "title": "Commands porcelain and plumbing",
         "text": "porcelain.md"
       }

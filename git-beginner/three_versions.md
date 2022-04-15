@@ -52,3 +52,8 @@ Apply version 3
 ```
 git commit -m"version 3 is there now"
 ```{{execute T1}}
+
+## Check 
+```
+git log --oneline"
+```{{execute T1}}
