@@ -28,15 +28,16 @@ last, in working directory the file contains version 1, 2,3 text
 git status
 ```{{execute T1}}
 
-## Edit diff between committed or local repo file and staged file 
+## Edit diff files between committed or local repo file and staged file 
 ```
 git diff --cached 
 ```{{execute T1}}
 
-## check diff file between working directory and local repo file
+## check diff files between working directory and staged file
 
-
-
+```
+git diff --color
+```{{execute T1}}
 
 Apply new version 
 ```
