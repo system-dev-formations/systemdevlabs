@@ -25,7 +25,7 @@ git log --oneline
 ```{{execute T1}}
 
 
-You can see, the strange-looking name SHA1 is an acronym for Secure Hashing
+You can see the commit ID, the strange-looking name SHA1 is an acronym for Secure Hashing
 Algorithm 1. In short, it's a checksum. It has its roots in the MD5
 implementation if you're familiar with that.
 

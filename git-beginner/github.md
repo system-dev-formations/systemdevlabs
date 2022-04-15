@@ -1,8 +1,13 @@
 How to manage a project in github   
 
 In your gitub account, create a new repository named **git-airbus**   
-Select Public, check README, .gitignore  and License    
+Select Public, check README, .gitignore  and License   
 
+Go to a github account and select Settings->Developer setting->Personal access tokens
+Hit generate tokens, key your password
+Enter in the note textbox  katacoda
+tick the check box repo
+save in your notepad locally this token
 ## Go to your home directory
 ```shell
 cd ~
@@ -36,5 +41,14 @@ cd ~ && cd project
 
 Change the remote url accordlingly
 ```shell
-git remote set-url origin https://github.com/crunchy-devops/git-test.git
+git remote add origin https://github.com/crunchy-devops/git-test.git
 ```{{ copy }}
+
+Now we are going to registre our repo to the remote github repo  
+Enter your github account 
+Copy/Paste your token as a password previously saved in notepad  
+```shell
+git push --set-upstream origin master
+```{{ execute T1 }}
+
+
