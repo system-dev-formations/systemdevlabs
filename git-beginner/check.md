@@ -10,7 +10,7 @@ git --version
 cd git
 ```{{ execute T1 }}
 
-## Display all git version available 
+## Display all git versions available 
 ```
 git tag --sort=-creatordate --format='%(creatordate:short)%09%(refname:strip=2)'
 ```{{ execute T1 }}
