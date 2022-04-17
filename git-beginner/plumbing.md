@@ -1,5 +1,4 @@
 
-## Plumbing commands
 ```
 cd ~ && mkdir plumbing  && cd plumbing && git init
 ```{{ execute T1}}

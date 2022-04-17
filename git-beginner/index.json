@@ -32,8 +32,11 @@
       {
         "title": "Plumbing commands",
         "text": "plumbing.md"
+      },
+      {
+        "title": "branches",
+        "text": "branches.md"
       }
-
 
 
     ],
