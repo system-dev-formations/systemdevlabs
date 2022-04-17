@@ -36,8 +36,11 @@
       {
         "title": "branches",
         "text": "branches.md"
+      },
+      {
+        "title": "Display app",
+        "text": "display.md"
       }
-
 
     ],
     "finish": {
