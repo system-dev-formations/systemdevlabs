@@ -38,6 +38,10 @@
         "text": "branches.md"
       },
       {
+        "title": "set up the lab",
+        "text": "lab.md"
+      },
+      {
         "title": "Display app",
         "text": "display.md"
       },
@@ -46,8 +50,8 @@
         "text": "cherry-pick.md"
       },
       {
-        "title": "set up the lab",
-        "text": "lab.md"
+        "title": "Rebase",
+        "text": "rebase.md"
       }
 
     ],

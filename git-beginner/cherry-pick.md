@@ -22,12 +22,33 @@ pick”)
 git checkout -b cpick
 ```{{execute T1}}
 
+check if there are no change
+```
+git status
+```{{execute T1}}
+
+if there is some change 
+```
+git stash
+```{{execute T1}}
+
 We want to pull in the max, exp , min function to add to your calculator , 
 Start with the max function 
+git cherry-pick usually brings a commit from somewhere else 
+and applies it on top of your current branch, recording a new commit, 
+
 ```
 git cherry-pick d003b91
 ```{{execute T1}}
 
+cherry-pick action 
+ 
+      A--B--C features
+     / 
+D--E--F--G  master
+          \
+           A'--B'--C' cpick
+                      
 Check 
 ```
 git log cpick --oneline
