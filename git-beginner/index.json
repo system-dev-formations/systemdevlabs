@@ -42,8 +42,12 @@
         "text": "display.md"
       },
       {
-        "title": "git merge",
-        "text": "merge.md"
+        "title": "Cherry Pick ",
+        "text": "cherry-pick.md"
+      },
+      {
+        "title": "set up the lab",
+        "text": "lab.md"
       }
 
     ],

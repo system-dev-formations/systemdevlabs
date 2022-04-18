@@ -30,7 +30,7 @@ git branch -av
 
 ### Get the number of commit a branch is ahead from the master
 ```
- git rev-list --left-right --count master...remotes/origin/exp
+git rev-list --left-right --count master...remotes/origin/exp
 ```{{ execute T1 }}
 
 ## Edit the list of all commits ahead from the master for a specific branch 
@@ -38,8 +38,10 @@ git branch -av
 git rev-list --left-right --pretty=oneline master...remotes/origin/exp
 ```{{ execute T1 }}
 
-
-
+display 
+```
+git log --all --decorate --oneline --graph
+```{{ execute T1 }}
 
 
 
