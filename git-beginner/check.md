@@ -3,11 +3,11 @@ We are going to check our environment
 ## Check whether git is installed
 Hit the following command for getting the git version 
 ```
-git --version 
+clear && git --version 
 ```{{execute T1}}
 ## Find  the latest version of git
 ```
-cd git
+cd ~/git
 ```{{ execute T1 }}
 
 ## Display all git versions available 
