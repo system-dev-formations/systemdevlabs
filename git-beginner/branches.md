@@ -1,29 +1,29 @@
 Fork the following repo to your github account
 https://github.com/crunchy-devops/calc2.git
 When pressing the green button you should have
-https://github.com/<your_github_account>/calc2.git
+https://github.com/your_github_account/calc2.git
 
 ### Do a git clone command 
 ```
 cd ~ && git clone https://github.com/<your_github_account>/calc2.git
 ```{{copy}}
 
-### Check local branch
+### Check your local branch
 ```
 cd calc2 && git branch 
 ```{{ execute T1 }} 
 
-### Check all branches
+### Check all branches available
 ```
 git branch -a
 ```{{ execute T1 }}
 
-### Check all remote branches
+### Check only remote branches
 ```
 git branch -r
 ```{{ execute T1 }}
 
-### Check all branches and the associated commit messages
+### Check all branches with their associated commit messages
 ```
 git branch -av
 ```{{ execute T1 }}

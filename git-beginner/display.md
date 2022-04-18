@@ -20,7 +20,7 @@ docker run -p 80:8080 go-web-server2
 
 select the tab ( +)  and select port to view HTTP port 80 on host 1
 
-
+In the console type *ctrl-C* to get out
 
 
 

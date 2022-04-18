@@ -40,6 +40,10 @@
       {
         "title": "Display app",
         "text": "display.md"
+      },
+      {
+        "title": "git merge",
+        "text": "merge.md"
       }
 
     ],
