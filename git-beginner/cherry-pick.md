@@ -43,11 +43,11 @@ git cherry-pick d003b91
 
 cherry-pick action 
  
-      A--B--C features
+      A--B--C features  
      / 
-D--E--F--G  master
+D--E--F--G  master  
           \
-           A'--B'--C' cpick
+           A'--B'--C' cpick  
                       
 Check 
 ```

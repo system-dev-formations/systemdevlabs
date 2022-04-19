@@ -1,41 +1,29 @@
-modifier la fichier Dockerfile pour obtenir le script suivant 
+git rebase takes your current branch and rewrites a series of
+its own tip commits in one way.
 
-```dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install python3 python3-pip vim
-RUN pip3 install flask
-COPY app.py /opt/app.py
-ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
-```
-Esc et : et tapez wq pour sauvegarder
+example of initial state:
 
-Creer la fichier app.py
+A---B---C---D master  
+    \
+     E--F--G topic  
 
-```
-vi app.py
-```{{execute T1}}
+go to topic by doing *git checkout topic* 
+and *git rebase master*
+A---B---C---D master  
+            \
+              E'--F'--G' topic
 
-tapez  i et copier le code suivant 
+using cherry-pick, go to master  *git checkout master* 
+run *git cherry-pick topic~3..topic*
 
-```python
-# app.py
-import os
-from flask import Flask
-app = Flask(__name__)
+A---B---C---D--E'--F'--G' master  
+    \
+     E--F--G topic
+the commits from topic were copied into master
 
-@app.route("/")
-def main():
-    return "Welcome!"
+Both cherry-pick and rebase do very similar things; 
 
-@app.route('/how are you')
-def hello():
-    return 'I am good, how about you?'
 
-if __name__ == "__main__":
-    app.run()
-```
 
-Esc et : et tapez wq pour sauvegarder
 
 
