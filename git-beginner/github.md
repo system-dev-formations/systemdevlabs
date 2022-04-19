@@ -4,10 +4,10 @@ In your gitub account, create a new repository named **git-airbus**
 Select Public, check README, .gitignore  and License   
 
 Go to a github account and select Settings->Developer setting->Personal access tokens
-Hit generate tokens, key your password
-Enter in the note textbox  katacoda
-tick the check box repo
-save in your notepad locally this token
+Hit generate tokens, key your password  
+Enter in the note textbox  katacoda  
+tick the check box repo  
+save in your notepad locally this token  
 ## Go to your home directory
 ```shell
 cd ~
@@ -47,6 +47,21 @@ git remote add origin https://github.com/crunchy-devops/git-test.git
 Now we are going to registre our repo to the remote github repo  
 Enter your github account 
 Copy/Paste your token as a password previously saved in notepad  
+```shell
+git push --set-upstream origin master
+```{{ execute T1 }}
+
+Register a sensitive file
+```
+echo "1234567" >> password.txt
+```{{ execute T1 }}
+
+Added to staging area and commit 
+```
+git add password.txt && git commit -m"added sensitive file"
+```{{ execute T1 }}
+
+Push to remote repo 
 ```shell
 git push --set-upstream origin master
 ```{{ execute T1 }}

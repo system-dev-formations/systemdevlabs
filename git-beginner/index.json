@@ -18,16 +18,16 @@
         "text": "first_commit.md"
       },
       {
-        "title": "Learning Github",
-        "text": "github.md"
-      },
-      {
         "title": "Git Promotion Model",
         "text": "three_versions.md"
       },
       {
-        "title": "Remove files",
-        "text": "remove_file.md"
+        "title": "Learn how to use Github",
+        "text": "github.md"
+      },
+      {
+        "title": "Remove commit",
+        "text": "remove_commit.md"
       },
       {
         "title": "Plumbing commands",
@@ -38,7 +38,7 @@
         "text": "branches.md"
       },
       {
-        "title": "set up the lab",
+        "title": "Set up the lab",
         "text": "lab.md"
       },
       {

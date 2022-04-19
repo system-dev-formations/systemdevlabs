@@ -20,9 +20,9 @@ echo "version 3" >> test.py
 
 ## Check
 So now we got 3 differents version of test.py  
-The file in the local repo contains version 1 text
-in staging area we have the version 1 and version2 text 
-last, in working directory the file contains version 1, 2,3 text
+The file in the local repo contains version 1 text  
+in staging area we have the version 1 and version2 text     
+last, in working directory the file contains version 1, 2,3 text    
 
 ```
 git status

@@ -1,4 +1,4 @@
-## Remove files from staging area aka cache or index
+## Remove commit from staging area aka cache or index
 
 ```
 echo "version 4" >> test.py
@@ -13,7 +13,7 @@ Check
 git status
 ```{{execute T1}}
 
-Remove recursely all files 
+Remove recursely all commit 
 ```
 git reset HEAD -- . 
 ```{{execute T1}}
