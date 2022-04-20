@@ -43,6 +43,7 @@ display
 git log --all --decorate --oneline --graph
 ```{{ execute T1 }}
 
+### Use case with stash 
 
 
 
