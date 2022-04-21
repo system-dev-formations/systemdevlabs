@@ -44,13 +44,7 @@ and applies it on top of your current branch, recording a new commit,
 git cherry-pick d003b91
 ```{{execute T1}}
 
-cherry-pick action 
- 
-  A--B--C features  
- / 
-D--E--F--G  master  
- \
-   A' cpick  
+![cherry-pick](./assets/cherry-pick.png)
                       
 Check 
 ```

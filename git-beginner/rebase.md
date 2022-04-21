@@ -3,22 +3,20 @@ its own tip commits in one way.
 
 example of initial state:  
 
-A---B---C---D master  
-    \
-     E--F--G topic  
+![initial-state](./assets/initial-state.png)
 
 go to topic by doing *git checkout topic*   
 and *git rebase master*  
-A---B---C---D master  
-            \
-              E'--F'--G' topic  
+
+
+![rebase](./assets/rebase.png)
+ 
 
 using cherry-pick, go to master  *git checkout master*   
 run *git cherry-pick topic~3..topic*  
 
-A---B---C---D--E'--F'--G' master  
-    \
-     E--F--G topic  
+![cherry-pick-1](./assets/cherry-pick-1.png)
+
 the commits from topic were copied into master  
 
 Both cherry-pick and rebase do very similar things;   
