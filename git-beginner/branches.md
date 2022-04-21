@@ -10,7 +10,7 @@ cd ~ && git clone https://github.com/<your_github_account>/calc2.git
 
 ### Check your local branch
 ```
-cd calc2 && git branch 
+cd ~/calc2 && git branch 
 ```{{ execute T1 }} 
 
 ### Check all branches available
@@ -43,7 +43,7 @@ display
 git log --all --decorate --oneline --graph
 ```{{ execute T1 }}
 
-### Use case with stash 
+### A use case with stash 
 
 
 

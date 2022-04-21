@@ -1,4 +1,8 @@
-go to calc_other 
+go to calc_other
+```shell
+cd ~ && cd calc_other
+```{{ execute T1 }}
+
 ### check local branches
 ```
 git branch
@@ -14,10 +18,9 @@ Verify what features are available for you to use
 git log --oneline features
 ```{{execute T1}}
 
-Create a temporar branch to use as we work on incorporationg the features
-Create a new branch cpick and switch
-to it in one step using the shortcut. (cpick here represents “cherry
-pick”)
+Create a temporary branch to use as we work on incorporationg the features
+Create a new branch cpick and switch to it
+cpick here represents “cherry pick”)
 ```
 git checkout -b cpick
 ```{{execute T1}}
@@ -43,13 +46,19 @@ git cherry-pick d003b91
 
 cherry-pick action 
  
-      A--B--C features  
-     / 
+  A--B--C features  
+ / 
 D--E--F--G  master  
-          \
-           A'--B'--C' cpick  
+ \
+   A' cpick  
                       
 Check 
 ```
 git log cpick --oneline
-```{{execute T1}}
+```{{ execute T1 }}
+
+Graph , command acronym is a dog 
+```
+git log --all --decorate --oneline --graph 
+```{{ execute T1 }}
+
