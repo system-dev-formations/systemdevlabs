@@ -20,7 +20,7 @@ git log
 
 you can change your commit message with the --amend switch 
 ```
-git commit --amend m "first initial commit"
+git commit --amend -m "first initial commit"
 ```{{ execute T1 }}
 
 check the git log file 

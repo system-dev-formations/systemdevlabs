@@ -16,7 +16,7 @@ cd ~
 ## Clone your Github repo to your local environment  
 Change the current url below   
 ```
-git clone https://github.com/crunchy-devops/git-airbus.git
+git clone https://github.com/<github_account>/git-airbus.git
 ```{{ copy }} 
 and 
 ```shell
@@ -41,8 +41,14 @@ cd ~ && cd project
 
 Change the remote url accordlingly
 ```shell
-git remote add origin https://github.com/crunchy-devops/git-test.git
+git remote add origin https://github.com/<github_account>/git-test.git
 ```{{ copy }}
+
+Check 
+```
+git status
+```{{ execute T1 }}
+
 
 Now we are going to registre our repo to the remote github repo  
 Enter your github account 
