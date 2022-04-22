@@ -56,6 +56,22 @@
       {
         "title": "Rebase",
         "text": "rebase.md"
+      },
+      {
+        "title": "Merge",
+        "text": "merge.md"
+      },
+      {
+        "title": "Pull-request",
+        "text": "pull-request.md"
+      },
+      {
+        "title": "git bisect",
+        "text": "bisect.md"
+      },
+      {
+        "title": "git tag",
+        "text": "tag.md"
       }
 
     ],

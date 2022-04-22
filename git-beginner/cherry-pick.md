@@ -51,7 +51,8 @@ Check
 git log cpick --oneline
 ```{{ execute T1 }}
 
-Graph , command acronym is a dog 
+Graph , the way to remenber this command is to use 
+the acronym *a dog* (--*a*ll --*d*ecorate --*o*neline --*g*raph)  
 ```
 git log --all --decorate --oneline --graph 
 ```{{ execute T1 }}
