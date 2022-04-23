@@ -14,6 +14,19 @@ commits and a log message from the user describing the changes.
 
 ![merge-done](./assets/merge-done.png)
 
+## Give some info to git regarding your identity
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
+
 We are going to set up an complete git environment suitable for a professional usage
 clone this repo 
 ```shell
@@ -34,10 +47,10 @@ Create a bunch of alias commands
 git config --global alias.co checkout
 ```{{ execute T1 }}
 
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global core.editor "vi"
+git config --global alias.br branch  
+git config --global alias.ci commit  
+git config --global alias.st status  
+git config --global core.editor "vi"  
 
 Check 
 ```
