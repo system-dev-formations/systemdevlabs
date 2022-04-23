@@ -86,7 +86,7 @@ edit the file  ~/.gitconfig
 in an alias section copy/paste 
 
 ```
-editconflicted= "!f() { git ls-files --unmerged | cut -f2 | sort -u ; } ; f | xargs $EDITOR -p"
+editconflicted= "!f() { git ls-files --unmerged | cut -f2 | sort -u ; } ; f | xargs $EDITOR -"
 ```{{ copy }}
 
 Create two branches 
