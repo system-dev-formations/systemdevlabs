@@ -43,7 +43,35 @@ display
 git log --all --decorate --oneline --graph
 ```{{ execute T1 }}
 
-### A use case with stash 
+Create a new branch local 
+```
+git branch mybranch 
+```{{ execute T1 }} 
+
+switch to the branch 
+```
+git checkout mybranch
+```{{ execute T1 }}
+
+or your can one command
+```
+git checkout -b mytest
+```{{ execute T1 }} 
+
+Create a branch from stash command
+modify calc.html 
+vi calc.html
+```
+git stash save "test"
+```{{ execute T1 }} 
+
+```
+git stash list
+```{{ execute T1 }}
+
+```
+git stash branch my-modify-stash stash@{0}
+```{{ execute T1 }} 
 
 
 

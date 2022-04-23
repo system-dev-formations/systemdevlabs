@@ -38,3 +38,8 @@ This a good result
 ```shell
  git bisect good
 ```{{ execute T1 }}
+
+Stop using bisect 
+```shell
+ git bisect reset
+```{{ execute T1 }}
