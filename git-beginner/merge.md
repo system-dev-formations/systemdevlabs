@@ -109,9 +109,16 @@ Check
 git merge B
 ```{{ execute T1 }}
 
-Check all files involved in a conflict
 
+Export the editor name 
+```
+export EDITOR=vim
+```{{ execute T1 }}
+
+
+Check all files involved in a conflict
 ```
 git editconflicted
 ```{{ execute T1 }}
 
+On all conflicts are solved , 
