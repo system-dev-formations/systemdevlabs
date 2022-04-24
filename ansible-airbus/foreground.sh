@@ -9,3 +9,4 @@ git clone http://github.com/crunchy-devops/ansible-course.git
 source ~/.git-completion.bash
 alias ll='ls -alrt'
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+clear

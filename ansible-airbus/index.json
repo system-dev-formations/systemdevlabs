@@ -1,7 +1,7 @@
 {
     "noindex": true,
-    "title": "Ansible-airbus",
-    "description": "All commands and concepts of ansible",
+    "title": "Ansible-Airbus",
+    "description": "All concepts and commands of Ansible",
     "difficulty": "Intermediate",
     "time": "60 minutes",
     "details": {
@@ -12,7 +12,7 @@
         },
         "steps": [
             {
-                "title": "Configure our sandbox",
+                "title": "Configure our Ansible sandbox",
                 "text": "step1.md"
             },
             {
