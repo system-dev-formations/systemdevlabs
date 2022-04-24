@@ -17,11 +17,11 @@ Create a .git directory
 git init
 ```{{ execute T1 }}
 
-Get the url 
-and enter 
+Get your github url 
+and enter this command
 ```shell
 git remote add origin < your url tp-airbus gitrepo>
-```{{ execute T1 }}
+```{{ copy }}
 
 ## Give some info to git regarding your identity 
 Set your email and user name
@@ -46,8 +46,7 @@ commit
 git commit -m "First initial"
 ```{{execute T1}}
 
-Go tio github to obtain a token
-
+Go to github to obtain a token as password for git push
 Push 
 ```
 git push --set-upstream origin master 
