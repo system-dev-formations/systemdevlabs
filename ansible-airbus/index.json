@@ -27,7 +27,14 @@
                 "title": "Ad-hoc commands",
                 "text": "ad_hoc.md"
             },
-
+            {
+                "title": "Change inventory_children",
+                "text": "children.md"
+            },
+            {
+                "title": "Playbooks",
+                "text": "playbook.md"
+            },
             {
                 "title": "Step-4: Comment mettre en place un filtre",
                 "text": "step4.md"

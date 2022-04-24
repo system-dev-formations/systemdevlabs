@@ -54,6 +54,11 @@ ansible all -m command -a "df -h"  -i inventory_katacoda
 ansible ubuntu -m file -a "dest=/home/ubuntu/testfile state=touch" -i inventory_katacoda
 ```{{ execute T1 }}
 
+Check 
+```shell
+docker run -d --name portainer -p 80:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer -H unix:///var/run/docker.sock 
+```{{ execute T1 }}
 
+Select view HTTP port 80 on host 1
 
 
