@@ -1,12 +1,12 @@
 
-Faire 
+do 
 ```
-cd ~/tp-ansible && vi format_device.yml
+cd ~/tp-airbus && vi format_device.yml
 ``` {{ execute T1}}
 
-Faire i 
-et pressez sur copy dans le clipboard
-et click droit paste
+type i 
+copy the code
+right click in a console and paste
 
 ```
 ---
@@ -23,17 +23,14 @@ et click droit paste
         msg: " device : {{ get_disk.stdout | get_device }}"
 ```{{ copy }}
 
-Mettre en place le filtre get_device
-faire 
+Install  get_device filter
 ```
 cd filter_plugins && vi my_filters.py
 ```{{ execute T1}}
 
-M:ettre le curseur sur la premiere ligne 
-Faire Esc et dd pour effacer les lignes
+Put the cursor on the first line hit esc button type dd that will delete each line one by one.   
 
-Ajouter la partie de code dans le fichier myfilters.py
-Faire i 
+add this code in myfilters.py
 
 ```
 from natsort import natsorted
@@ -65,17 +62,19 @@ class FilterModule(object):
         return list_device 
 ```{{ copy }}
 
-Copier le code et faire paste 
-Faire Esc et :qw pour sauver le fichier
+copy code and paste
+hit Esc and :qw  that will save the file
 
 
-Verifier avec la commande suivante
+Check 
+
 ```
-cd ~/tp-ansible &&
+cd ~/tp-airbus &&
 ansible-playbook -i inventory_local format_device.yml
 ```{{ execute T1}}
 
-FAITES DES COMMIT / PUSH REGULIERS VOTRE SESSION EST ACTIVE POUR SEULEMENT 1 HEURE
+Do a commit / push in your github repo 
+
 
 
 

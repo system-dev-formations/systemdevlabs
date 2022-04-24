@@ -58,6 +58,10 @@
         "text": "rebase.md"
       },
       {
+        "title": "Basic Merge",
+        "text": "base_merge.md"
+      },
+      {
         "title": "Merge",
         "text": "merge.md"
       },
