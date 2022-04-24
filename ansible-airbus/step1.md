@@ -25,7 +25,7 @@ Modify the inventory, change the remote machine settings in inventory_local file
 
 and then we are going to enter the following ad-hoc command for checking whether our environment is ok.  
 ```
-ansible all -m ping -i inventory_local
+ansible all -m ping -i inventory_katacoda
 ```{{execute T1}}
 
 This is our command   

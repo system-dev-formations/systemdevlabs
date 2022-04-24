@@ -1,50 +1,58 @@
 
-###  Si votre votre projet n'a pas ete cree
+**if your github project is not saved , do all commands below**
 
-Verification 
-```
-git --version
-```{{execute T1}}
+Create a github project named **tp-airbus**
 
-Check de votre url 
-```
-git remote -v
-```{{execute T1}}
+```shell
+cd ~ && cd ansible-course
+```{{ execute T1 }}
 
-Creer sous Github perso,  un repo nomme tp-ansible
-sans README.md, .gitignore, LICENSE
-Copier votre nouvelle url  dans cette commande 
-```
-git remote set-url origin < votre url git du repo>
-``` {{ copy }}
+remove all .git directory
+```shell
+rm -Rf .git
+```{{ execute T1 }}
 
-Verifier
-```
-git remote -v
-```{{execute T1}}
+Create a .git directory
+```shell
+git init
+```{{ execute T1 }}
 
-Mettre a jour les variables de configuration de git  
+Get the url 
+and enter 
+```shell
+git remote add origin < your url tp-airbus gitrepo>
+```{{ execute T1 }}
+
+## Give some info to git regarding your identity 
+Set your email and user name
 ```
-git config --global user.email " votre adresse mail"
+git config --global user.email "dockerlite@gmail.com"
 ```{{ copy }}
+Right click on the console and paste  
+Change the email address   
 ```
-git config --global user.name "Votre Nom"
-``` {{ copy }}
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
 
-faire un 
+Add all files 
 ```
-git add . 
+git add -A
 ```{{execute T1}}
 
-faire un 
+commit  
 ```
 git commit -m "First initial"
 ```{{execute T1}}
 
-faire un 
+Go tio github to obtain a token
+
+Push 
 ```
-git push
+git push --set-upstream origin master 
 ```{{execute T1}}
+
 
 
 
