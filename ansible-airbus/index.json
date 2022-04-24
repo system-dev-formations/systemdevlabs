@@ -20,9 +20,14 @@
                 "text": "step2.md"
             },
             {
-                "title": "Step-3: Si votre projet TP est deja cree",
+                "title": "Use tp-airbus project",
                 "text": "step3.md"
             },
+            {
+                "title": "Ad-hoc commands",
+                "text": "ad_hoc.md"
+            },
+
             {
                 "title": "Step-4: Comment mettre en place un filtre",
                 "text": "step4.md"
