@@ -16,7 +16,7 @@ Propagate this ssh key to the remote vm **don't miss changing this IP address**
 ssh-copy-id  ubuntu@175.155.22.22
 ```{{ copy }}
 
-Check the container IP address 
+Check all containers IP address 
 ```
 docker network inspect bridge
 ```{{ execute T1 }}
