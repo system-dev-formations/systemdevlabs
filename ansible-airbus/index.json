@@ -36,17 +36,29 @@
                 "text": "playbook.md"
             },
             {
-                "title": "Step-4: Comment mettre en place un filtre",
+                "title": "How to set up s filter",
                 "text": "step4.md"
             },
             {
-                "title": "Step-5: Mise au point du script ",
+                "title": "Check script ",
                 "text": "step5.md"
             },
             {
-                "title": "Step-6: Modification du playbook ",
+                "title": "Playbook using a filter ",
                 "text": "step6.md"
+            },
+            {
+                "title": "Module",
+                "text": "module.md"
+            },
+            {
+                "title": "Roles",
+                "text": "roles.md"
             }
+
+
+
+
         ],
         "assets": {
             "host01": [

@@ -19,7 +19,7 @@ Loop
 ansible-playbook -i inventory_children loops.yml --limit ubuntudocker
 ```{{ execute T1 }}
 
-You could pass variables betweem hosts by creating a dummy host used to save those variables 
+You could pass variables between hosts by creating a dummy host used to save those variables 
 This feature is named **in-memory inventory**
 ```
 ansible-playbook -i inventory_children runtime_inventory_additions.yml
@@ -36,10 +36,15 @@ ansible-playbook -i inventory_children motd.yml
 ansible-playbook -i inventory_children new_filter.yml --limit target2 
 ```{{ execute T1 }}
 
-```shell script
-    ansible-playbook -i inventory_children git_version_filter.yml --limit target2
+
+```shell
+ansible-playbook -i inventory_children git_version_filter.yml --limit target2
 ```{{ execute T1 }}
 
 
+Install of version of git on all os 
+```shell
+ansible-playbook -i inventory_children install_on_multios.yml
+```{{ execute T1 }}
 
 

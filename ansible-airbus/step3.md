@@ -18,7 +18,8 @@ Propagate this ssh key to the remote vm **don't miss changing this IP address**
 ssh-copy-id  ubuntu@175.155.22.22
 ```{{ copy }}
 
-Check ```
+Check 
+```
 ansible all -m ping -i inventory_katacoda
 ```{{execute T1}}
 
