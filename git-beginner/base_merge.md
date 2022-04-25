@@ -83,7 +83,7 @@ git commit
 ```{{ execute T1 }}
 
 ```
-git log --all --decorator --oneline --graph 
+git log --all --decorate --oneline --graph 
 ```{{ execute T1 }}
 
 
