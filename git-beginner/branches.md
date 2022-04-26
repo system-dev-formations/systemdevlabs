@@ -1,5 +1,5 @@
 Fork the following repo to your github account
-https://github.com/crunchy-devops/calc2.git
+https://github.com/system-dev-formations/calc2.git
 When pressing the green button you should have
 https://github.com/your_github_account/calc2.git
 

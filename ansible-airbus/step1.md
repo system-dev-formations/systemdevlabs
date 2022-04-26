@@ -21,7 +21,7 @@ Check all containers IP address
 docker network inspect bridge
 ```{{ execute T1 }}
 
-Modify the inventory, change the remote machine settings in inventory_local file   
+Modify the inventory, change the remote machine settings in inventory_katacoda file   
 
 and then we are going to enter the following ad-hoc command for checking whether our environment is ok.  
 ```
@@ -32,7 +32,7 @@ This is our command
 *  **ansible**             program name  
 *  **all**                 select all hosts defined in the inventory file    
 *  **-m ping**             -m is a switch saying we are using a certain module followed by its name  
-*  **-i inventory_local** -i means inventory followed by the name of the inventory file.  
+*  **-i inventory_katacoda** -i means inventory followed by the name of the inventory file.  
 
 
 ![architecture](./assets/architecture_ansible.png)

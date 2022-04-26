@@ -12,12 +12,12 @@ pull or fetch operations against if you want to.
 run the following into the respective directory for each cloned repository
 
 ```
-cd ~/calc2 && git remote add upstream https://github.com/crunchy-devops/calc2.git
+cd ~/calc2 && git remote add upstream https://github.com/system-dev-formations/calc2.git
 ```{{ copy }}
 
 and
 ```
-cd ~/calc_other && git remote add upstream https://github.com/crunchy-devops/calc2.git
+cd ~/calc_other && git remote add upstream https://github.com/system-dev-formations/calc2.git
 ```{{ copy }}
 
 Check, run the command in each repo directory
