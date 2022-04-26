@@ -31,3 +31,35 @@ rebase
 ```shell
 git rebase 3753e5a
 ```{{ execute T1 }}
+
+check 
+
+```
+git log --all --decorate --oneline --graph
+```{{ execute T1 }}
+
+Now that you have your code as desired in the cpick branch, you’re
+ready to merge that branch back into the master branch. Run the
+following commands:
+
+```
+git checkout master
+```{{ execute T1 }}
+
+```
+git merge cpick
+```{{ execute T1 }}
+
+Once the merge is complete, push the changes out to the remote.
+
+```
+git push
+```{{ execute T1 }}
+
+
+
+
+
+
+
+

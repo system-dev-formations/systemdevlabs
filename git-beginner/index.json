@@ -58,6 +58,10 @@
         "text": "rebase.md"
       },
       {
+        "title": "Rebase-Merge",
+        "text": "multi-users.md"
+      },
+      {
         "title": "Basic Merge",
         "text": "base_merge.md"
       },

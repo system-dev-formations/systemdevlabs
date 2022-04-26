@@ -1,5 +1,4 @@
-To get started, you’ll need to clone the magicSquareJS repository that’s used in this
-section of the book.
+To get started, you’ll need to clone the magicSquareJS repository.
 You can do this by way of the git clone command:
 
 ```
