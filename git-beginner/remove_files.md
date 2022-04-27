@@ -3,8 +3,17 @@ will remove the file, and git status will show deleted: foo.txt.
 But git rm foo.txt will remove the file and add it to the staging area.
 
 ```
-git rm password.txt
+echo "hme "  >> name.txt
 ```{{execute T1}}
+
+```
+git add name.txt
+```{{execute T1}}
+
+```
+git rm name.txt
+```{{execute T1}}
+
 
 Register a commit related to the previous action 
 ```
@@ -16,7 +25,7 @@ wrong files were added, but they were not yet committed,
 then a simple reset will remove the files from the staging area, but doesn’t actually delete the files:
 
 ```
-git reset HEAD password.txt
+git reset HEAD name.txt
 ```{{ execute T1 }}
 
 make a commit and notice a stray directory or a file (for example .DS_Store)
@@ -24,7 +33,7 @@ make a commit and notice a stray directory or a file (for example .DS_Store)
 i.e.: make git forget already committed files.
 
 ```
-git rm --cached password.txt
+git rm --cached name.txt
 ```{{ execute T1 }}
 
 if it's a directory 
@@ -34,7 +43,7 @@ git rm -r --cached test/
 
 
 ### Delete a file from the entire Git history 
-fork this repo ansible-course to example-git-delete 
+fork this repo ansible-course to example-git-delete   
 git clone the new repo 
 ```
 git filter-branch --tree-filter 'rm -f inventory' HEAD
