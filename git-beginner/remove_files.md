@@ -1,4 +1,7 @@
-Remove file from the repository + filesystem
+What’s the difference between rm and git rm? Not much: rm foo.txt,
+will remove the file, and git status will show deleted: foo.txt.
+But git rm foo.txt will remove the file and add it to the staging area.
+
 ```
 git rm password.txt
 ```{{execute T1}}
@@ -8,24 +11,27 @@ Register a commit related to the previous action
 git commit -m "Deleted file from git repository"
 ```{{ execute T1 }}
 
-Push to the remote repo 
+
+wrong files were added, but they were not yet committed, 
+then a simple reset will remove the files from the staging area, but doesn’t actually delete the files:
+
 ```
-git push
+git reset HEAD password.txt
 ```{{ execute T1 }}
 
-Remove file from the Git repository only
+make a commit and notice a stray directory or a file (for example .DS_Store)
+ that should have been ignored in the first place, 
+i.e.: make git forget already committed files.
+
 ```
 git rm --cached password.txt
 ```{{ execute T1 }}
 
+if it's a directory 
 ```
-git commit -m "Deleted file from git repository only "
-```{{ execute T1 }}
+git rm -r --cached test/
+```{{ copy }}
 
-Push to the remote repo 
-```
-git push
-```{{ execute T1 }}
 
 ### Delete a file from the entire Git history 
 fork this repo ansible-course to example-git-delete 
