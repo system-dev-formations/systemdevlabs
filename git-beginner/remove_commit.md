@@ -1,4 +1,4 @@
-## Remove commit from staging area aka cache or index
+## Remove last commit
 
 ```
 echo "version 4" >> test.py
@@ -10,20 +10,7 @@ git commit -am " added version 4"
 
 Check 
 ```
-git status
-```{{execute T1}}
-
-Remove recursely all commit 
-```
-git reset HEAD -- . 
-```{{execute T1}}
-
-HEAD is a reference to a specific commit (think of it as a variable). 
-Normally, it points to the last commit in local repository or in staging area  
--- set the remove action recursively   
-.  is the current directory  
-```
-git status
+git log --oneline
 ```{{execute T1}}
 
 ## Remove the last commit
@@ -33,5 +20,5 @@ git reset --soft HEAD~1
 
 Check 
 ```
-git log 
+git log --oneline 
 ```{{execute T1}}
