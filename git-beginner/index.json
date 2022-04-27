@@ -34,6 +34,10 @@
         "text": "remove_commit.md"
       },
       {
+        "title": "Remove files",
+        "text": "remove_files.md"
+      },
+      {
         "title": "Plumbing commands",
         "text": "plumbing.md"
       },
