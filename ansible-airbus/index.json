@@ -36,27 +36,17 @@
                 "text": "playbook.md"
             },
             {
-                "title": "Role",
-                "text": "role.md"
-            },
-            {
-                "title": "Check script ",
-                "text": "step5.md"
-            },
-            {
-                "title": "Playbook using a filter ",
-                "text": "step6.md"
-            },
-            {
-                "title": "Module",
-                "text": "module.md"
+                "title": "User module",
+                "text": "user_module.md"
             },
             {
                 "title": "Roles",
                 "text": "roles.md"
+            },
+            {
+                "title": "Ansible-Vault",
+                "text": "vault.md"
             }
-
-
 
 
         ],

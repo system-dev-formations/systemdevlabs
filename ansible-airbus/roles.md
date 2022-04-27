@@ -4,7 +4,7 @@ you can easily reuse them and share them with other users
 
 In your home directory 
 ```shell
-cd ~ && mkdir example-role  && cd example-role
+cd ~ && cd tp-airbus
 ```{{ execute T1 }}
 
 Create a role 
@@ -12,8 +12,8 @@ Create a role
 ansible-galaxy init github.role
 ```{{ execute T1 }}
 
-Copy / Paste in a brand new playbook.yml file
- 
+Create in a brand new github.yml file  
+And copy/paste the following code 
 ```
 ---
 - name: use a dedicated Ansible module
@@ -22,7 +22,7 @@ Copy / Paste in a brand new playbook.yml file
     - { role: github.role }
 ```{{ copy }}
 
-In example-role/github.role/tasks/main.yml 
+In tp-airbus/github.role/tasks/main.yml 
 copy/paste
 ```
 # tasks file for github.role
@@ -39,31 +39,17 @@ copy/paste
   register: result
 ```{{ copy }}
 
-in example-role/github.role/defaults/main.yml
+in tp-airbus/github.role/defaults/main.yml
 Copy / Paste
 ```
 # default file for github.role
 git_key: d6f90b4be8axxxxxxxxxxxxxxx
 ```{{ copy }}
 
-In your example directory 
 ```
-cd ~ && cd example-role
+ansible-playbook -i inventory_children github.yml
 ```{{ execute T1 }}
 
-
-```
-cp -r ../tp-airbus/library .
-```{{ execute T1 }}
-
-```
-cp -r ../tp-airbus/inventory_children .
-```{{ execute T1 }}
-
-```
-ansible-playbook -i inventory_children playbook.yml
-```{{ execute T1 }}
-
-
+**DO NOT SAVE YOUR REPO IN GITHUB NOW ** 
 
 
