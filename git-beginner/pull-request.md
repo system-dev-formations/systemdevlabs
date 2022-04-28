@@ -16,12 +16,11 @@ We have all rights to it.
 This is our working repository.  
 
 Fork in your first user github account the following repo
-https://github.com/system-dev-formations/python_epidemic_simulation.git
+https://github.com/system-dev-formations/python_epidemic_simulations.git
 
-log out and login to your second github account 
-and 
+clone a personal copy of the forked repo
 ```shell
-git clone https://github.com/<your_current_account>/python_epidemic_simulation.git
+git clone https://github.com/<your_current_account>/python_epidemic_simulations.git
 ```{{ copy }}
 
 ### set up the triangular workflow
@@ -32,15 +31,15 @@ git remote -v
 
 Add an upstream 
 ```
-git remote add upstream https://github.com/<your_first_github/python_epidemic_simulation.git
-``` {{ copy }}
+git remote add upstream https://github.com/system-dev-formation/python_epidemic_simulations.git
+``` {{ execute T1}}
 
 check 
 ```
 git remote -v
 ```{{ execute T1 }}
 
-We are going to sync our current repo with the upstream 
+You have to sync our current repo with the upstream repo 
 ```
 git fetch upstream 
 ```{{ execute T1 }}
@@ -66,9 +65,9 @@ check
 git diff
 ```{{ execute T1 }} 
 
-do a fast commit 
+do a fast commit with the switch -am
 ```
-git commit -am"Added docstrings comments"
+git commit -am"Added a docs"
 ```{{ execute T1 }}
 
 check 
@@ -76,5 +75,5 @@ check
 git log --oneline
 ```{{ execute T1 }}
 
-in github go the original repo 
-create a pull-request 
+**At this point the trainer should manage the pull-request on its own due to permission rights on the upstream repo**
+ 
