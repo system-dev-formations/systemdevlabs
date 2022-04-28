@@ -74,9 +74,23 @@ take a look at what worktrees are currently there
 git worktree list
 ```{{ execute T1 }}
 
+![worktrees](./assets/worktree_branch.png)
+
 do a git merge, resolve the conflict
 
 ```shell
 git push
 ```{{ execute T1 }}
+
+## Remove your worktree
+
+```shell
+cd ~ && rm -Rf super_calc_features
+```{{ execute T1 }}
+
+```shell
+git worktree prune
+```{{ execute T1 }}
+
+
 
