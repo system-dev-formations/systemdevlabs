@@ -84,6 +84,10 @@
       {
         "title": "git tag",
         "text": "tag.md"
+      },
+      {
+        "title": "Worktrees",
+        "text": "worktree.md"
       }
 
     ],
