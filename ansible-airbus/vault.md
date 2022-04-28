@@ -3,7 +3,7 @@ such as passwords or keys rather than leaving it visible as plaintext in playboo
 
 Go to 
 ```shell
-cd ~ && cd tp-airbus/github.role/defaults/main.yml
+cd ~ && cd tp-airbus/github.role/defaults
 ```{{ execute T1 }}
 
 Check 
@@ -49,6 +49,20 @@ Run as normal
 ```shell
 ansible-playbook -i inventory_children github.yml
 ```{{ execute T1 }}
+
+## Give some info to git regarding your identity 
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+
+Right-click on the console and paste   
+Put your name   
 
 and now your can save your repo safetly 
 ```shell
