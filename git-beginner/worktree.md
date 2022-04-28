@@ -75,6 +75,11 @@ git worktree list
 ```{{ execute T1 }}
 
 ![worktrees](./assets/worktree_branch.png)
+The sign + in a front of the branch name means a worktree branch
+there are 2 branches available in a same time master and features 
+You current branch is master. If you execute a checkout on features 
+git says features is already checked out 
+So the behavior of git is a little bit different than a normal situation 
 
 do a git merge, resolve the conflict
 
