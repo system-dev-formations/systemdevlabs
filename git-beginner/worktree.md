@@ -61,6 +61,13 @@ Look at what branches you have there
 git branch
 ```{{ execute T1 }}
 
+![worktrees](./assets/worktree_branch.png)    
+The sign + in a front of the branch name means a worktree branch
+there are 2 branches available in a same time master and features 
+You current branch is master. If you execute a checkout on features 
+git says features is already checked out.   
+So the behavior of git is a little bit different than a normal situation 
+
 Note that you have the features branch you created for the other
 worktree. Do a log on that branch; you can see your new commit
 just as if you had done it in this worktree.
@@ -74,12 +81,6 @@ take a look at what worktrees are currently there
 git worktree list
 ```{{ execute T1 }}
 
-![worktrees](./assets/worktree_branch.png)    
-The sign + in a front of the branch name means a worktree branch
-there are 2 branches available in a same time master and features 
-You current branch is master. If you execute a checkout on features 
-git says features is already checked out.   
-So the behavior of git is a little bit different than a normal situation 
 
 do a git merge, and resolve the conflict, git commit -am than will create a merge commit
 
