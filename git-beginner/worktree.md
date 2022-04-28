@@ -3,7 +3,7 @@ The difference is that worktrees allow you to leave your workspace as it is and 
 This other workspace will have the particularity of pointing to the same local repository as the initial repository 
 but it will point to another branch
 
-###Complex staging to preserve
+### Complex staging to preserve
 
 If we have already made good progress on the staging of our work, it would be frustrating to see the 
 stash pop eventually refuse to restore it, on the pretext that we will have modified some of the files concerned
@@ -19,8 +19,8 @@ https://github.com/crunchy-devops/sub_docs.git
 
 clone the super_calc repo 
 ```shell
-git clone https://github.com/crunchy-devops/super_calc.git
-```{{ execute T1 }}
+git clone https://github.com/<your repos> /super_calc.git
+```{{ copy  }}
 
 ```shell
 cd super_calc
@@ -41,7 +41,7 @@ git worktree add -b features ../super_calc_features origin/features
 cd ~ && cd super_calc_features
 ```{{ execute T1 }}
 
-Change calc.html 
+Change the title in the calc.html file  
 ```shell
 vim calc.html
 ```{{ execute T1 }}
@@ -74,14 +74,14 @@ take a look at what worktrees are currently there
 git worktree list
 ```{{ execute T1 }}
 
-![worktrees](./assets/worktree_branch.png)
+![worktrees](./assets/worktree_branch.png)    
 The sign + in a front of the branch name means a worktree branch
 there are 2 branches available in a same time master and features 
 You current branch is master. If you execute a checkout on features 
-git says features is already checked out 
+git says features is already checked out.   
 So the behavior of git is a little bit different than a normal situation 
 
-do a git merge, resolve the conflict
+do a git merge, and resolve the conflict, git commit -am than will create a merge commit
 
 ```shell
 git push
@@ -96,6 +96,3 @@ cd ~ && rm -Rf super_calc_features
 ```shell
 git worktree prune
 ```{{ execute T1 }}
-
-
-
