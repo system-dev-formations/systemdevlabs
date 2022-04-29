@@ -21,7 +21,11 @@ Check all containers IP address
 docker network inspect bridge
 ```{{ execute T1 }}
 
-Modify the inventory, change the remote machine settings in inventory_katacoda file   
+Modify the inventory_katacoda file, change the remote machine settings in inventory_katacoda file   
+```
+cd ~ && cd ansible-course && vim inventory_katacoda
+```{{ execute T1 }}
+
 
 and then we are going to enter the following ad-hoc command for checking whether our environment is ok.  
 ```

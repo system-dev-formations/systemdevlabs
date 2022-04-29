@@ -1,5 +1,15 @@
+Check Ping using a playbook
+```
+ansible-playbook  -i inventory_children ansible_ping.yml  --limit ubuntuvm
+```{{ execute T1 }}
 
-Usage of when
+Check Ping on a group of dedicated hosts named slave . it's target2 and target3 , alpine and centos 
+
+```
+ansible-playbook  -i inventory_children ansible_ping.yml  --limit slave
+```{{ execute T1 }}
+
+Usage of when as a if , how to test an ansible variable
 ```
 ansible-playbook -i inventory_children ansible_facts_using_when.yml
 ```{{ execute T1 }}
@@ -25,24 +35,39 @@ This feature is named **in-memory inventory**
 ansible-playbook -i inventory_children runtime_inventory_additions.yml
 ```{{ execute T1 }}
 
-See dynamic inventory 
+Propagate ssh key between hosts  using delegate_to module 
 
-Filter
+```
+ansible-playbook -i inventory_children propagate_ssh_key.yml
+```{{ execute T1 }}
+
+
+see slides in the presentation on dynamic inventory 
+
+Filters
 ```
 ansible-playbook -i inventory_children motd.yml
 ```{{ execute T1 }}
 
+Customized filter 
 ```
 ansible-playbook -i inventory_children new_filter.yml --limit target2 
 ```{{ execute T1 }}
 
+check the code source of the filter
+```
+cd ~ && cd tp-airbus/filter_plugins && vim my_filters.py
+```{{ execute T1 }}
+
+
+Usage a customized filter, this filter find the latest of glusterfs repo in git  
 
 ```shell
 ansible-playbook -i inventory_children git_version_filter.yml --limit target2
 ```{{ execute T1 }}
 
 
-Install of version of git on all os 
+Install of version of git package on all os 
 ```shell
 ansible-playbook -i inventory_children install_on_multios.yml
 ```{{ execute T1 }}

@@ -81,19 +81,33 @@ take a look at what worktrees are currently there
 git worktree list
 ```{{ execute T1 }}
 
+git merge
+```shell
+git merge feature
+```{{ execute T1 }}
 
-do a git merge, and resolve the conflict, git commit -am than will create a merge commit
+Add the untracked changed calc.html file
+```shell
+git add .
+```{{ execute T1 }}
 
+```shell
+git commit
+```{{ execute T1 }}
+
+You get a merge commit message 
+Save it 
+
+Save your job in the remote repo 
 ```shell
 git push
 ```{{ execute T1 }}
 
 ## Remove your worktree
-
 ```shell
 cd ~ && rm -Rf super_calc_features
 ```{{ execute T1 }}
 
 ```shell
-git worktree prune
+cd ~/super_calc && git worktree prune
 ```{{ execute T1 }}
