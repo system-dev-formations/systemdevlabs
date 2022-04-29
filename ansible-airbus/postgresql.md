@@ -87,7 +87,7 @@ cd ~ && vi tp-airbus/postgresql.role/tasks/main.yml
     enabled: "{{ postgresql_service_enabled }}"
 
 - import_tasks: users.yml
-```{{ execute T1 }}
+```{{ copy }}
 
 
 ## Give some info to git regarding your identity 
