@@ -27,22 +27,22 @@ Copy and paste this code
 ---
 - name: Set Postgresql environment variables
   template:
-  src: postgres.sh.j2
-  dest: /etc/profile.d/postgres.sh
-  mode: 0644
+    src: postgres.sh.j2
+    dest: /etc/profile.d/postgres.sh
+    mode: 0644
   notify: restart postgresql
 
 - name: Check if Postgresql directory exists
   file:
-  path: "{{ postgresql_data_dir }}"
-  owner: "{{ postgresql_user }}"
-  group: "{{ postgresql_group }}"
-  state: directory
-  mode: 0700
+    path: "{{ postgresql_data_dir }}"
+    owner: "{{ postgresql_user }}"
+    group: "{{ postgresql_group }}"
+    state: directory
+    mode: 0700
 
 - name: Check if Postgresql database is initialized
   stat:
-  path: "{{ postgresql_data_dir }}/PG_VERSION"
+    path: "{{ postgresql_data_dir }}/PG_VERSION"
   register: pgdata_dir_version
   tags:
     - db_init
@@ -65,17 +65,17 @@ Copy and Paste this code
 ---
 - name: Ensure Postgresql users are present
   postgresql_user:
-  name: "{{ item.name }}"
-  password: "{{ item.password | default(omit) }}"
-  encrypted: "{{ item.encrypted | default(omit) }}"
-  priv: "{{ item.priv | default(omit) }}"
-  role_attr_flags: "{{ item.role_attr_flags | default(omit) }}"
-  db: "{{ item.db | default(omit) }}"
-  login_host: "{{ item.login_host | default(omit) }}"
-  login_password: "{{ item.login_password | default(omit) }}"
-  login_user: "{{item.login_user | default(omit) }}"
-  port: "{{item.port | default(omit) }}"
-  state: "{{ item.state | default(omit) }}"
+    name: "{{ item.name }}"
+    password: "{{ item.password | default(omit) }}"
+    encrypted: "{{ item.encrypted | default(omit) }}"
+    priv: "{{ item.priv | default(omit) }}"
+    role_attr_flags: "{{ item.role_attr_flags | default(omit) }}"
+    db: "{{ item.db | default(omit) }}"
+    login_host: "{{ item.login_host | default(omit) }}"
+    login_password: "{{ item.login_password | default(omit) }}"
+    login_user: "{{item.login_user | default(omit) }}"
+    port: "{{item.port | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
   with_items: "{{ postgresql_users }}"
   #no_log: "{{ postgresql__users_no_log }}"
   become: true
@@ -100,7 +100,7 @@ postgresql_packages:
 - postgresql-server
 - postgresql-contrib
 - postgresql-libs
-  postgresql_python_library:
+postgresql_python_library:
 - postgresql-plpython
 - python-psycopg2
 ```{{ copy }}
@@ -114,9 +114,9 @@ cd ~ && cd tp-airbus/postgresql.role/handlers && vim main.yml
 ```
 - name: restart postgresql
   service:
-  name: "{{ postgresql_daemon}}"
-  state: "{{ postgresql_restarted_state }}"
-  sleep: 5
+    name: "{{ postgresql_daemon}}"
+    state: "{{ postgresql_restarted_state }}"
+    sleep: 5
 ```{{ copy }}
 
 
@@ -147,7 +147,7 @@ postgresql_users: []
 Add a templates jinja2 file 
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/templates && vim postgres.sh.j2
+cd ~ && cd tp-airbus/templates && vim postgres.sh.j2
 ```{{ execute T1 }}
 
 Copy and paste this code
