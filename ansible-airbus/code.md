@@ -96,13 +96,13 @@ postgresql_bin_path: "/usr/bin"
 postgresql_config_path: "/var/lib/pgsql/data"
 postgresql_daemon: postgresql
 postgresql_packages:
-- postgresql
-- postgresql-server
-- postgresql-contrib
-- postgresql-libs
+  - postgresql
+  - postgresql-server
+  - postgresql-contrib
+  - postgresql-libs
 postgresql_python_library:
-- postgresql-plpython
-- python-psycopg2
+  - postgresql-plpython
+  - python-psycopg2
 ```{{ copy }}
 
 Add an handler, it will restart postgres service automatically when the postgres configuration is modified

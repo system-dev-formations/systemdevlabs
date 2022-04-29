@@ -54,7 +54,12 @@
             {
                 "title": "All other scripts",
                 "text": "code.md"
+            },
+            {
+                "title": "docker-compose vs Ansible playbook",
+                "text": "todo-flask.md"
             }
+
 
         ],
         "assets": {
