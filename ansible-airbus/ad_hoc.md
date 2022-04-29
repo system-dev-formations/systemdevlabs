@@ -20,6 +20,11 @@ but it is failed because we miss to specift a switch -b meaning  become : sudo/r
 ansible ubuntuvm -m apt -b -a "name=elinks state=latest" -i inventory_katacoda
 ```{{ execute T1 }}
 
+Install python3 package on alpine 
+```
+ansible alpine -m apk -b -a "name=python3 state=latest" -i inventory_katacoda
+```{{ execute T1 }}
+
 list of hosts from the inventory
 ```
 ansible all --list-hosts -i inventory_katacoda

@@ -46,8 +46,15 @@
             {
                 "title": "Ansible-Vault",
                 "text": "vault.md"
+            },
+            {
+                "title": "Modularity with role ",
+                "text": "postgresql.md"
+            },
+            {
+                "title": "All scripts",
+                "text": "code.md"
             }
-
 
         ],
         "assets": {

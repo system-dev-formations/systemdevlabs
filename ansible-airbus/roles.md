@@ -50,6 +50,6 @@ git_key: d6f90b4be8axxxxxxxxxxxxxxx
 ansible-playbook -i inventory_children github.yml
 ```{{ execute T1 }}
 
-**DO NOT SAVE YOUR REPO IN GITHUB NOW ** 
+<span style="color: red;">DO NOT SAVE YOUR REPO IN GITHUB NOW</span> 
 
 

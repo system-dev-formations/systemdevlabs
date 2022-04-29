@@ -29,20 +29,21 @@ Loop
 ansible-playbook -i inventory_children loops.yml --limit ubuntudocker
 ```{{ execute T1 }}
 
+### Pass variabe between hosts
 You could pass variables between hosts by creating a dummy host used to save those variables 
 This feature is named **in-memory inventory**
 ```
 ansible-playbook -i inventory_children runtime_inventory_additions.yml
 ```{{ execute T1 }}
 
-Propagate ssh key between hosts  using delegate_to module 
+### Propagate ssh key between hosts  using delegate_to module 
 
 ```
 ansible-playbook -i inventory_children propagate_ssh_key.yml
 ```{{ execute T1 }}
 
 
-see slides in the presentation on dynamic inventory 
+## see slides in the presentation on dynamic inventory 
 
 Filters
 ```
