@@ -28,7 +28,7 @@ ansible-galaxy init postgresql.role
 ```{{ execute T1 }}
 
 ```shell
-vim postgre.yml
+vim postgres.yml
 ```{{ execute T1 }}
 
 Copy/paste this code 
@@ -66,12 +66,12 @@ Copy and paste this code
 ```{{ copy }}
 
 ```
-cd ~ && vi tp-airbus/postgresql.role/tasks/main.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks && vim main.yml
 ```{{ execute T1 }}
 
+Put your cursor after the line starting with #
+
 ```
----
-# tasks file for postgresql.role
 - include_tasks: variables.yml
 
 # Setup /install task
@@ -105,7 +105,7 @@ Put your name
 
 and now your can save your repo safetly 
 ```shell
-git add . && git commit -m"added github role" && git push 
+git add . && git commit -m"added first part of postgresql role " && git push 
 ```{{ execute T1 }}
 
 
