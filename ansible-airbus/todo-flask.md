@@ -56,9 +56,9 @@ exit
 Check the application 
 Select port to views on host 1 , enter 32500 
 
-We going to study the code in playbook.yml 
+Now let have a look to the code in playbook.yml file 
 Here is how a container is create using Ansible 
-```
+```yaml
  docker_container:
         name: 'db'
         image: systemdevformations/docker-postgres12
@@ -73,7 +73,7 @@ Here is how a container is create using Ansible
       register: db_cont_metadata
 ```
 wait_for module check if postgres service is up and running 
-```
+```yaml
 - name: wait for postgres to accept connections
   wait_for:
     host: "{{ result.container.NetworkSettings.IPAddress }}"
@@ -85,35 +85,50 @@ wait_for module check if postgres service is up and running
   until: postgresql_running is success
   retries: 10     
 ```
-Now all test cases are create within Ansible playbook not manually
-```
+Now all test cases are created within Ansible playbook not manually
+```yaml
 - name: Set up todos.sql script in docker container
   shell: docker cp ./sql/todos.sql db:/tmp
 ```
 For managing the db container a new **in-memory** host is created 
-```
+```yaml
 - name: Add container db to in-memory inventory
   add_host:
-  name: db
-  ansible_connection: docker
+    name: db
+    ansible_connection: docker
   changed_when: false
 ```
 check if the database exist in the container
 usage raw module because there is no python interpreter in db container 
-``` 
+```yaml
 - name: run command in container db
   delegate_to: db
   remote_user: postgres
   raw: psql -l | grep tododb | wc -l
   register: result 
-````
+```
+
+### Stop and remove all containers with docker-compose
+```
+cd ~ && cd todo-flask-postgres && docker-compose down 
+```{{ execute T1 }}
+
+### Remove persistent data, this is for having a clean environment 
+```
+cd ~ && cd /opt && rm -Rf postgres 
+```{{ execute T1 }}
+
+### Run the playbook that will create the database and populate it with test case data 
+
+```
+cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory playbook.yml 
+```{{ execute T1 }}
 
 
+### Run install_todoapplication.yml  ( Note: Present usage of tags )
 
-
-
-
-
-
+```
+cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory install-todoapplication.yaml 
+```{{ execute T1 }}
 
 
