@@ -61,7 +61,10 @@ cd ~ && cd tp-airbus/filter_plugins && vim my_filters.py
 ```{{ execute T1 }}
 
 
-Usage a customized filter, this filter find the latest of glusterfs repo in git  
+Usage a customized filter, this filter switches the latest of glusterfs release in git repo   
+```
+cd ~ && cd tp-airbus
+```{{ execute T1 }}
 
 ```shell
 ansible-playbook -i inventory_children git_version_filter.yml --limit target2

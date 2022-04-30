@@ -5,9 +5,14 @@ ad hoc commands are quick and easy, but they are not reusable.
 switch -m is for calling a module. Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through Playbooks.
 Users can also write their own modules. These modules can control system resources, like services, packages, or files (anything really), or handle executing system commands.
 
-Clear ubuntu cache on remote vm 
+Upgrade ubuntu remote vm and clean its cache 
 ```
 ansible ubuntuvm -m apt -a "upgrade=yes update_cache=yes cache_valid_time=86400" -b -i inventory_katacoda
+```{{ execute T1 }}
+
+Just updating all repo links
+```
+ansible ubuntu -m command -a "apt update" -b -i inventory_katacoda
 ```{{ execute T1 }}
 
 Install a package
