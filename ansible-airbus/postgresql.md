@@ -32,7 +32,7 @@ vim postgres.yml
 ```{{ execute T1 }}
 
 Copy/paste this code 
-```
+```yaml
 ---
 - name: use a dedicated Ansible postgresql role
   hosts: leader
@@ -57,7 +57,7 @@ cd ~ && vi tp-airbus/postgresql.role/tasks/variables.yml
 ```{{ execute T1 }}
 
 Copy and paste this code 
-```
+```yaml
 ---
 # Variables configuration
 - name: Include OS-specific variables (Centos)
@@ -71,7 +71,7 @@ cd ~ && cd tp-airbus/postgresql.role/tasks && vim main.yml
 
 Put your cursor after the line starting with #
 
-```
+```yaml
 - include_tasks: variables.yml
 
 # Setup /install task

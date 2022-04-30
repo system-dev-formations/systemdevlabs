@@ -3,7 +3,7 @@ Add a file setup-CentOS.yml
 cd ~ && cd tp-airbus/postgresql.role/tasks && vim setup-CentOS.yml
 ```{{ execute T1 }}
 
-```
+```yaml
 ---
 - name: Check if the postgresql packages are installed
   yum:
@@ -23,7 +23,7 @@ cd ~ && cd tp-airbus/postgresql.role/tasks && vim initialize.yml
 ```{{ execute T1 }}
 
 Copy and paste this code 
-```
+```yaml
 ---
 - name: Set Postgresql environment variables
   template:
@@ -61,7 +61,7 @@ cd ~ && cd tp-airbus/postgresql.role/tasks && vim users.yml
 ```{{ execute T1 }}
 
 Copy and Paste this code 
-```
+```yaml
 ---
 - name: Ensure Postgresql users are present
   postgresql_user:
@@ -88,7 +88,7 @@ cd ~ && cd tp-airbus/postgresql.role/tasks && vim CentOS-7.yml
 ```{{ execute T1 }}
 
 Copy/paste this code 
-```
+```yaml
 ---
 postgresql_version: "9.2"
 postgresql_data_dir: "/var/lib/pgsql/data"
@@ -111,7 +111,7 @@ Add an handler, it will restart postgres service automatically when the postgres
 cd ~ && cd tp-airbus/postgresql.role/handlers && vim main.yml
 ```{{ execute T1 }}
 
-```
+```yaml
 - name: restart postgresql
   service:
     name: "{{ postgresql_daemon}}"
@@ -128,7 +128,7 @@ cd ~ && cd tp-airbus/postgresql.role/defaults && vim main.yml
 
 Copy and paste this code
 
-```
+```yaml
 postgresql_enablerepo: ""
 
 postgresql_restarted_state: "restarted"
@@ -147,11 +147,11 @@ postgresql_users: []
 Add a templates jinja2 file 
 
 ```
-cd ~ && cd tp-airbus/templates && vim postgres.sh.j2
+cd ~ && cd tp-airbus/postgresql.role/templates && vim postgres.sh.j2
 ```{{ execute T1 }}
 
 Copy and paste this code
-```
+```shell
 export PGDATA={{ postgresql_data_dir }}
 export PATH=$PATH:{{ postgresql_bin_path }}
 ```{{ copy }}
