@@ -108,24 +108,24 @@ usage raw module because there is no python interpreter in db container
   register: result 
 ```
 
-#### Stop and remove all containers with docker-compose
+<span style="color: green;">Stop and remove all containers with docker-compose</span>
 ```
 cd ~ && cd todo-flask-postgres && docker-compose down 
 ```{{ execute T1 }}
 
-#### Remove persistent data, this is for having a clean environment 
+<span style="color: green;">Remove persistent data, this is for having a clean environment</span>
+
 ```
 cd ~ && cd /opt && rm -Rf postgres 
 ```{{ execute T1 }}
 
-#### Run the playbook that will create the database and populate it with test case data 
+<span style="color: green;">Run the playbook that will create the database and populate it with test case data</span>
 
 ```
 cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory playbook.yml 
 ```{{ execute T1 }}
 
-
-#### Run install_todoapplication.yml  ( Note: Present the usage of Ansible tags )
+<span style="color: green;">Run install_todoapplication.yml  ( Note: Present the usage of Ansible tags )</span>
 
 ```
 cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory install-todoapplication.yaml --tags build
