@@ -83,7 +83,7 @@ git worktree list
 
 git merge
 ```shell
-git merge feature
+git merge features
 ```{{ execute T1 }}
 
 Add the untracked changed calc.html file

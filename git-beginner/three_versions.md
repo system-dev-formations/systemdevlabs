@@ -58,3 +58,10 @@ git commit -m"version 3 is there now"
 ```
 git log --oneline
 ```{{execute T1}}
+
+## Git Web 
+```
+docker run -d -e "CONTAINER_TIMEZONE=Europe/Paris" -e "GITPROJECT=project" -v $PWD:/var/lib/git --name git-web -p 80:80 fraoustin/gitweb
+```{{ execute T1 }}
+
+user is gituser password gitpassword 
