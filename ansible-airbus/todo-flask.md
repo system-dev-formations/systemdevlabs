@@ -53,11 +53,11 @@ select * from todos ;
 \q
 exit 
 ```  
-Check the application 
-Select port to views on host 1 , enter 32500 
+Check the application  
+Select port to views on host 1 , enter 32500  
 
-Now let have a look to the code in playbook.yml file 
-Here is how a container is create using Ansible 
+Now let have a look to the code in playbook.yml file       
+Here is how a container is create using Ansible  
 ```yaml
  docker_container:
         name: 'db'
@@ -108,27 +108,29 @@ usage raw module because there is no python interpreter in db container
   register: result 
 ```
 
-### Stop and remove all containers with docker-compose
+#### Stop and remove all containers with docker-compose
 ```
 cd ~ && cd todo-flask-postgres && docker-compose down 
 ```{{ execute T1 }}
 
-### Remove persistent data, this is for having a clean environment 
+#### Remove persistent data, this is for having a clean environment 
 ```
 cd ~ && cd /opt && rm -Rf postgres 
 ```{{ execute T1 }}
 
-### Run the playbook that will create the database and populate it with test case data 
+#### Run the playbook that will create the database and populate it with test case data 
 
 ```
 cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory playbook.yml 
 ```{{ execute T1 }}
 
 
-### Run install_todoapplication.yml  ( Note: Present usage of tags )
+#### Run install_todoapplication.yml  ( Note: Present the usage of Ansible tags )
 
 ```
-cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory install-todoapplication.yaml 
+cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory install-todoapplication.yaml --tags build
 ```{{ execute T1 }}
 
-
+```
+cd ~ && cd todo-flask-postgres && ansible-playbook -i inventory install-todoapplication.yaml --tags docker_run 
+```{{ execute T1 }}
