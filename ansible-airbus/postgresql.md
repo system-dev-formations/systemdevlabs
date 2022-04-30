@@ -13,7 +13,7 @@ Add [leader]
 and copy/paste the same line of ubuntu01  
 change ubuntu01 to centos01  
 change the ansible_ssh_host ip address  
-change ssh_user to centos    
+change ansible_ssh_user to centos    
 save the file 
 
 Check 
@@ -22,7 +22,7 @@ ansible all -m ping -i inventory_children
 ```{{ execute T1 }}
 
 
-Create a role named postgresql
+Create a role named postgresql.role
 ```shell
 ansible-galaxy init postgresql.role
 ```{{ execute T1 }}

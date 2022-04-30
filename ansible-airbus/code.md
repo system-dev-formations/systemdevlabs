@@ -174,8 +174,11 @@ and now your can save your repo safetly
 cd ~ && cd tp-airbus && git add . && git commit -m"added code for postgresql role" && git push 
 ```{{ execute T1 }}
 
+## Finally - Run the playbook
 
-
+```shell
+cd ~ && cd tp-airbus && ansible-playbook -i inventory_children postgres.yml 
+```{{ execute T1 }}
 
 
 
