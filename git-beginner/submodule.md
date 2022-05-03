@@ -19,6 +19,8 @@ git clone  https://github.com/<your github account>/super_calc.git
 cd ~ && cd super_calc
 ```{{ execute T1 }}
 
+Install sub_ui project as a submodule of super_calc
+
 ```shell
 git submodule add https://github.com/<your github account>/sub_ui.git sub_ui
 ```{{ copy }}
@@ -36,6 +38,13 @@ git status
 git show :.gitmodules
 ```{{ execute T1 }}
 
+
+
+
+
+
+
+
 Now you need to commit and push the staged submodule mapping
 and data to your local and remote repositories. Run the following
 commands:
@@ -47,6 +56,12 @@ git commit -m "Add submodules sub_ui"
 ```shell
 git push
 ```{{ execute T1 }}
+
+Check 
+```shell
+git log --oneline
+```{{ execute T1 }}
+
 
 Now you can clone a new copy of this project with the submodule.
 Change to a higher-level directory and clone a copy of the project
@@ -95,7 +110,7 @@ cd ~ && rm -Rf super_calc
 Using one command you can initialize your main repo and the submodule 
 ```
 git clone --recurse-submodules https://github.com/<your_github_account>/super_calc.git 
-```{{ execute T1 }}
+```{{ copy }}
 
 you need to make a simple change in calc.html 
 

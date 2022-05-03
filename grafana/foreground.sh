@@ -1,7 +1,6 @@
 apt update
 git clone https://github.com/crunchy-devops/prometheus-grafana.git
 pip3 install docker-compose
-~/prometheus-grafana/lab-prometheus/docker-compose up -d
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 source ~/.git-completion.bash
 alias ll='ls -alrt'
