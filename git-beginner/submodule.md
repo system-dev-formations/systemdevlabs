@@ -2,8 +2,23 @@ Git submodules allow you to keep a git repository as a subdirectory of another g
 There are simply a reference to another repository at a particular snapshot in time. 
 That enables a Git repository to incorporate and track version history of external code.
 
+Sometimes submodules are the right choice. 
+This is particularly the case when the codebase is massive and you don't necessarily want to get everything every time, 
+especially in sprawling projects. We then resort to submodules so as not to require the recovery of entire sections of
+the code for everyone. Various massive open-source projects use it precisely for this reason (or because of a strong 
+modularization which is not natively supported by the ecosystem of the main language): 
+see for example Chromium, which makes heavy use of submodules .
+
 Add the sub_ui repository as a submodule to the super_calc
 project by running this command:
+```shell
+git clone  https://github.com/<your github account>/super_calc.git 
+```{{ copy }}
+
+```shell
+cd ~ && cd super_calc
+```{{ execute T1 }}
+
 ```shell
 git submodule add https://github.com/<your github account>/sub_ui.git sub_ui
 ```{{ copy }}
@@ -71,6 +86,17 @@ git submodule status
 This time, you see a space at the beginning (instead of the minus
 sign) to indicate the submodule has been initialized.
 
+
+Delete the relevant directory  
+```
+cd ~ && rm -Rf super_calc
+```{{ execute T1 }}
+
+Using one command you can initialize your main repo and the submodule 
+```
+git clone --recurse-submodules https://github.com/<your_github_account>/super_calc.git 
+```{{ execute T1 }}
+
 you need to make a simple change in calc.html 
 
 ```
@@ -136,6 +162,7 @@ git status
 git  submodule status
 ```{{ execute T1 }}
 
-
+With these tools, submodules can be a fairly simple and effective method of developing on related
+but separate projects simultaneously.
 
 

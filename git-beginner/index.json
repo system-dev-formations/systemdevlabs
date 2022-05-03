@@ -89,8 +89,11 @@
       {
         "title": "Worktrees",
         "text": "worktree.md"
+      },
+      {
+        "title": "Submodule",
+        "text": "submodule.md"
       }
-
     ],
     "finish": {
       "text": "finish.md"
