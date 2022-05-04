@@ -18,6 +18,13 @@ This is our working repository.
 Fork in your first user github account the following repo
 https://github.com/system-dev-formations/python_epidemic_simulations.git
 
+### set up the triangular workflow
+
+Go to your home directory
+```
+cd ~
+```{{ execute T1 }}
+
 clone a personal copy of the forked repo
 ```shell
 git clone https://github.com/<your_current_account>/python_epidemic_simulations.git
@@ -31,7 +38,7 @@ git remote -v
 
 Add an upstream 
 ```
-git remote add upstream https://github.com/system-dev-formation/python_epidemic_simulations.git
+git remote add upstream https://github.com/system-dev-formations/python_epidemic_simulations.git
 ``` {{ execute T1}}
 
 check 
