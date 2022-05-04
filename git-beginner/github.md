@@ -57,19 +57,3 @@ Copy/Paste your token as a password previously saved in notepad
 git push --set-upstream origin master
 ```{{ execute T1 }}
 
-Register a sensitive file
-```
-echo "1234567" >> password.txt
-```{{ execute T1 }}
-
-Added to staging area and commit 
-```
-git add password.txt && git commit -m"added sensitive file"
-```{{ execute T1 }}
-
-Push to remote repo 
-```shell
-git push --set-upstream origin master
-```{{ execute T1 }}
-
-
