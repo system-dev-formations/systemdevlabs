@@ -6,7 +6,7 @@
     "time": "60 minutes",
     "details": {
         "intro": {
-            "courseData": "background.sh",
+            "courseData": "setup.sh",
             "code": "foreground.sh",
             "text": "intro.md"
         },

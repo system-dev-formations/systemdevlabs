@@ -18,6 +18,19 @@ This is our working repository.
 Fork in your first user github account the following repo
 https://github.com/system-dev-formations/python_epidemic_simulations.git
 
+## Give some info to git regarding your identity
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
+
 ### set up the triangular workflow
 
 Go to your home directory
@@ -29,6 +42,11 @@ clone a personal copy of the forked repo
 ```shell
 git clone https://github.com/<your_current_account>/python_epidemic_simulations.git
 ```{{ copy }}
+
+```
+cd python_epidemic_simulations
+```{{ execute T1 }}
+
 
 ### set up the triangular workflow
 check 
