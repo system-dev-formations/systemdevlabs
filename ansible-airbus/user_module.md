@@ -1,8 +1,13 @@
 Copy your token in a file named token located in your home directory
 
 ```shell
-cd ~ && vim token
+cd ~ 
 ```{{ execute T1 }}
+
+copy your token in a file 
+```
+echo "your github token" > token
+```{{ copy }}
 
 go to tp-airbus directory
 
