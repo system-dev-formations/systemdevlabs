@@ -5,7 +5,7 @@ ssh-copy-id centos@xxxxx
 
 Add centos remote machine in inventory_children file 
 ```shell
-cd ~ && cd tp-airbus && vim inventory_children
+cd ~ && cd tp-airbus 
 ```{{ execute T1 }}
 
 create a line after the line containing ubuntu01  

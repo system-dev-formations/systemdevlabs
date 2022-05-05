@@ -23,7 +23,7 @@ docker network inspect bridge
 
 Modify the inventory_katacoda file, change the remote machine settings in inventory_katacoda file   
 ```
-cd ~ && cd ansible-course && vim inventory_katacoda
+cd ~ && cd ansible-course 
 ```{{ execute T1 }}
 
 
