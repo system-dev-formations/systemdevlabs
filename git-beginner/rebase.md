@@ -35,7 +35,19 @@ git checkout master
 git merge cpick
 ```{{ execute T1 }}
 
-Once the merge is complete, push the changes out to the remote.
+
+![fast-forward](./assets/fast-forward.png)
+
+check 
+
+```
+git log --all --decorate --oneline --graph
+```{{ execute T1 }}
+
+![merge-calc-other](./assets/merge_calc_other.png)
+
+
+Once the merge is complete, push the changes out to the remote repo in github.
 
 ```
 git push
