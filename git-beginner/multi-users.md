@@ -1,7 +1,37 @@
+
+
 Change to the calc2 subdirectory.
+```
+cd ~  && cd calc2
+```{{ execute T1 }}
+
+```
+git log --oneline
+```{{ execute T1 }}
+
+```
+git branch -av
+```{{ execute T1 }}
+
 ```
 git branch ui origin/ui
 ```{{ execute T1 }}
+
+Check but only master branch
+
+```
+git log --oneline
+```{{ execute T1 }}
+
+Check branch ui 
+
+```
+git log --oneline ui
+```{{ execute T1 }}
+
+![ui](./assets/calc2-ui.png)
+
+
 
 Merge the ui branch into master. (If you are not still on master,
 check out master first.)
@@ -9,12 +39,19 @@ check out master first.)
 git merge ui
 ```{{ execute T1 }}
 
+Git apply a fast-foward merge
+
+![merge-ui](./assets/calc2-ui-merge.png)
+
 Assuming the merge is successful, push the updates out to the
 remote.
 
 ```
 git push origin master
 ```{{ execute T1 }}
+
+![push_conflicted](./assets/conflicted-push.png)
+
 
 Your push is rejected. This is because the push done by the other
 user (as simulated when you were working in calc_other) changed
@@ -51,6 +88,18 @@ fetch command.
 git fetch
 ```{{ execute T1 }}
 
+check 
+```
+git log --oneline
+```{{ execute T1 }}
+
+
+```
+git log --oneline origin/master
+```{{ execute T1 }}
+
+![origin-master](./assets/origin-master.png)
+
 You are now ready to try the rebase. If all goes well, this operation
 will rebase locally off of the updated content from the master in the
 remote tracking branches. Run the following command (making
@@ -61,7 +110,7 @@ git rebase origin/master
 
 Once again, conflicts arise. Because the changes are different,
 between adding functionality and changing ui features, you can
-make an educated guess that if you just keep the current changes
+make an **educated guess** that if you just keep the current changes
 and apply the other changes on top of them, you won’t run into
 critical conflicts. So, you can tell Git to keep your changes if there
 are perceived conflicts. The easiest way to do that is to add the **-
@@ -79,10 +128,17 @@ git rebase -Xours origin/master
 ```{{ execute T1 }}
 
 Do a quick git log to see if the commits look correct.
-
 ```
 git log --oneline
 ```{{ execute T1 }}
+
+Result of -Xours
+
+![result-xours](./assets/result-xours.png)
+
+Graph 
+
+![graph-xours](./assets/graph-xours.png)
 
 Note that all of the commits that you would expect are now there.
 Try pushing these updates over to the remote side again.
@@ -90,5 +146,5 @@ Try pushing these updates over to the remote side again.
 git push
 ```{{ execute T1 }}
 
-
+![push-xours](./assets/push-xours.png)
 

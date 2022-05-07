@@ -38,8 +38,12 @@ git merge cpick
 
 ![fast-forward](./assets/fast-forward.png)
 
-check 
+When you try to merge one commit with a commit that can be reached by following the first commit’s history, 
+Git simplifies things by moving the pointer forward because there is no divergent work to
+merge together – this is called a “fast-forward.”
+To avoid fast-forward and create a merge commit use git merge --no-ff
 
+check 
 ```
 git log --all --decorate --oneline --graph
 ```{{ execute T1 }}
@@ -47,7 +51,11 @@ git log --all --decorate --oneline --graph
 ![merge-calc-other](./assets/merge_calc_other.png)
 
 
+
 Once the merge is complete, push the changes out to the remote repo in github.
+we can see origin/master is behind of HEAD->measter and cpick
+ 
+![behind](./assets/origin_master_behind.png)
 
 ```
 git push
