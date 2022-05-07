@@ -8,7 +8,7 @@ cd ~ && cd calc_other
 git branch
 ```{{execute T1}}
 
-### create a local branch that tracks the remote features branch
+### Create local branch that tracks the remote features branch
 ```
 git branch features origin/features
 ```{{execute T1}}
@@ -25,15 +25,19 @@ cpick here represents “cherry pick”)
 git checkout -b cpick
 ```{{execute T1}}
 
-check if there are no change
+## Give some info to git regarding your identity 
+Set your email and user name
 ```
-git status
-```{{execute T1}}
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
 
-if there is some change 
-```
-git stash
-```{{execute T1}}
 
 We want to pull in the max, exp , min function to add to your calculator , 
 Start with the max function 
@@ -51,8 +55,8 @@ Check
 git log cpick --oneline
 ```{{ execute T1 }}
 
-Graph , the way to remenber this command is to use 
-the acronym *a dog* (--*a*ll --*d*ecorate --*o*neline --*g*raph)  
+Graph , the way to remenber this command is to think of
+the acronym **a dog** (--**a**ll --**d**ecorate --**o**neline --**g**raph)  
 ```
 git log --all --decorate --oneline --graph 
 ```{{ execute T1 }}
