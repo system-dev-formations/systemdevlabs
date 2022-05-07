@@ -1,8 +1,6 @@
 git rebase takes your current branch and rewrites a series of
 its own tip commits in one way.  
 
-![rebase](./assets/rebase.png)
-
 
 Both cherry-pick and rebase do very similar things;   
 
@@ -16,6 +14,10 @@ rebase
 ```shell
 git rebase 3753e5a
 ```{{ execute T1 }}
+
+
+![rebase](./assets/rebase.png)
+
 
 check 
 
