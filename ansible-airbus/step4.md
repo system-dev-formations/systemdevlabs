@@ -1,12 +1,17 @@
+Go to step 3 beforehand
 
-do 
 ```
-cd ~/tp-airbus && vi format_device.yml
-``` {{ execute T1}}
+git clone https://github.com/<your github account>/tp-airbus.git
+``` {{ copy }}
 
-type i 
-copy the code
-right click in a console and paste
+
+```
+cd ~/tp-airbus 
+``` {{ execute T1 }}
+
+In VS code open folder tp-airbus
+
+create a file named format_device.yml 
 
 ```
 ---
@@ -23,12 +28,10 @@ right click in a console and paste
         msg: " device : {{ get_disk.stdout | get_device }}"
 ```{{ copy }}
 
-Install  get_device filter
-```
-cd filter_plugins && vi my_filters.py
-```{{ execute T1}}
+go to the directory filter_plugins  
+and edit the file my_filters.py
 
-Put the cursor on the first line hit esc button type dd that will delete each line one by one.   
+Put the cursor on a top and select all lines   
 
 add this code in myfilters.py
 
@@ -62,18 +65,40 @@ class FilterModule(object):
         return list_device 
 ```{{ copy }}
 
-copy code and paste
-hit Esc and :qw  that will save the file
+and paste 
 
 
-Check 
+go the the main console and check 
 
 ```
 cd ~/tp-airbus &&
 ansible-playbook -i inventory_local format_device.yml
 ```{{ execute T1}}
 
-Do a commit / push in your github repo 
+## Give some info to git regarding your identity
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
+
+```
+git add . 
+```{{ copy }}
+
+```
+git commit -m "Added a filter for formatting disk (part 1)"
+```{{ copy }}
+
+```
+git push
+```{{ copy }}
 
 
 

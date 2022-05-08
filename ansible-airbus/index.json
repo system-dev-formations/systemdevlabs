@@ -58,7 +58,12 @@
             {
                 "title": "docker-compose vs Ansible playbook",
                 "text": "todo-flask.md"
+            },
+            {
+                "title": "Your own filter for formatting disk",
+                "text": "step4.md"
             }
+
 
 
         ],
