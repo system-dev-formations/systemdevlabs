@@ -15,7 +15,7 @@ import subprocess
 disk = []
 device = []
 flag = 0
-type_format = ['swap','ext4','xfs','dos']
+type_format = ['swap','ext4','xfs','dos','squashfs']
 with open('fdisk_result.txt') as file:
     line = file.readlines()
 for i in line:

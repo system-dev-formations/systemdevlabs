@@ -75,6 +75,10 @@
         "text": "merge.md"
       },
       {
+        "title": "Git Squash",
+        "text": "squash.md"
+      },
+      {
         "title": "Git rerere",
         "text": "rerere.md"
       },

@@ -1,1 +1,3 @@
+So in my humble opinion, the fast-forward and especially the rebase make me think of small legacies of SVN where everything was linear (SVN did not manage branches). The interest of Git, it is in particular the branches, and to preserve their history which thus makes it possible to be able to trace everything, even if it sometimes becomes unreadable. However, I use rebase almost daily for cleanup reasons: one commit per branch for easier reading and cherry-pick, or to rebase from master when my working branch gets a bit old. In summary, I rebase my branch regularly and try to push "clean" things with only one commit per feature using the squash function.
+
 Thanks for using this lab
