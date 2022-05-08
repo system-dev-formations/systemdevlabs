@@ -8,11 +8,25 @@ you tell Git to learn and remember how you resolved that conflict.
 Afterward, if the same conflict occurs again, and rerere is enabled, Git
 will resolve the conflict automatically in the same way you did.
 
+## Give some info to git regarding your identity
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name   
+
 ```
 cd ~ && mkdir test-rerere && cd test-rerere && git init
 ```{{ execute T1 }}
 
-Create a file hello.txt 
+Copy calc.html file
+
 ```
 cp ../calc2/calc.html . 
 ```{{ execute T1 }}
@@ -47,7 +61,12 @@ git switch master
 git merge hme
 ```{{ execute T1 }}
 
-git makes a fast-forward, no conflict
+git makes a fast-forward, so there is no conflict at all
+
+Check and get the commit id 
+```
+git log --oneline
+```{{ execute T1 }}
 
  ```
 git checkout  <SHA-1 first init>
@@ -75,8 +94,8 @@ git switch master
 git merge test
 ```{{ execute T1 }}
 
-There is a conflict
-Set up rerere 
+There is a conflict  
+Now it's time to set up git rerere 
 
 ```
 git merge --abort
@@ -87,8 +106,12 @@ git config rerere.enabled true
 ```{{ execute T1 }}
 
 
+```
+git merge test 
+```{{ execute T1 }}
+
 See the line "Recorded preimage for 'calc.html'
-edit calc.html
+edit calc.html and modify the title 
 
 ```
 git rerere diff
@@ -99,7 +122,12 @@ git add .
 ```{{ execute T1 }}
 
 ```
-git commit -m "Solve merge conflict"
+git commit -m "Solve merge of test conflict"
+```{{ execute T1 }}
+
+check 
+```
+git log --oneline
 ```{{ execute T1 }}
 
 Remove the last commit
@@ -108,11 +136,17 @@ Remove the last commit
 git reset --hard HEAD^
 ```{{ execute T1 }}
 
+```
+git log --oneline
+```{{ execute T1 }}
+
+
  ```
 git merge test
 ```{{ execute T1 }}
 
 
 Resolved 'calc.html' using previous resolution.
+but it is waiting for your validation 
 
 
