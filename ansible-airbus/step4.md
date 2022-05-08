@@ -23,7 +23,7 @@ create a file named format_device.yml
       become: true
       command: fdisk -l
       register: get_disk
-    - name: pour la mise au point
+    - name: for debugging purpose
       debug:
         msg: " device : {{ get_disk.stdout | get_device }}"
 ```{{ copy }}
@@ -90,15 +90,15 @@ Put your name
 
 ```
 git add . 
-```{{ copy }}
+```{{ execute T1 }}
 
 ```
 git commit -m "Added a filter for formatting disk (part 1)"
-```{{ copy }}
+```{{ execute T1 }}
 
 ```
 git push
-```{{ copy }}
+```{{ execute T1 }}
 
 
 

@@ -60,11 +60,17 @@
                 "text": "todo-flask.md"
             },
             {
-                "title": "Your own filter for formatting disk",
+                "title": "Your own filter for formatting a disk",
                 "text": "step4.md"
+            },
+            {
+                "title": "Your own filter for formatting a disk -part2",
+                "text": "step5.md"
+            },
+            {
+                "title": "Your own filter for formatting a disk- part 3",
+                "text": "step6.md"
             }
-
-
 
         ],
         "assets": {

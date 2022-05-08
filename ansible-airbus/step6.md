@@ -1,12 +1,9 @@
 
-Faire
-
 ```
-cd ~/tp-ansible && vi format_device.yml
+cd ~/tp-ansible 
 ``` {{ execute T1 }}
 
-faire i et pressez sur copy dans le clipboard
-et coller la partie de script a la suite 
+Copy the following tasks in the format_device.yml script
 ```
 - name: prochaine etape, tester avec une liste de device vide 
   vars:
@@ -16,20 +13,15 @@ et coller la partie de script a la suite
   loop: "{{ device }}"
  ```{{ copy }}
  
- Test
+Check 
  ```
  cd ~/tp-ansible && 
  ansible-playbook -i inventory format_device.yml
 ```{{ execute T1 }}
  
  
-faire i et pressez sur copy dans le clipboard
-et coller la partie de script a la suite
+Copy the following tasks in the format_device.yml script
 
-```
-cd ~/tp-ansible && vi format_device.yml
-``` {{ execute T1 }}
- 
 ```
 - name: format disk 
   vars:
@@ -41,8 +33,13 @@ cd ~/tp-ansible && vi format_device.yml
   loop: "{{ device }}"
  ```{{ copy }}
  
- Test
+ Run the final playbook
  ```
  cd ~/tp-ansible && 
  ansible-playbook -i inventory format_device.yml
+```{{ execute T1 }} 
+
+Check all disks status 
+ ```
+lsblk -f
 ```{{ execute T1 }} 

@@ -1,26 +1,26 @@
-Allez dans le fichier my_filter
+Open  my_filters.py
 
 ```
 cd filter_plugins && vi my_filters.py
 ```{{ execute T1}}
 
-inserer a la place de ```return list_device``` 
+in VS Code insert the following lines on the line  ```return list_device``` to overwrite it 
 ```
    disk = []
    device = []
    flag = 0
-   type_format = ['swap','ext4','xfs','dos']
+   type_format = ['swap','ext4','xfs','dos', 'squashfs' ]
    line = list_device.split('\n')
    return line
 ``` {{ copy }}   
 
-Tester avec 
+Check 
 ```
 cd ~/tp-ansible &&
 ansible-playbook -i inventory_local format_device.yml
 ```{{ execute T1}}
 
-inserer a la place de ```return line``` 
+in VS Code insert the following lines on the line  ```return line``` to overwrite it 
 ```
    #return line
    for i in line:
@@ -29,7 +29,7 @@ inserer a la place de ```return line```
    return disk
 ``` {{ copy }}
 
-inserer a la place de ```return disk```
+in VS Code insert the following lines on the line  ```return disk``` to overwrite it 
 ```
    #return disk
    for v in disk:
@@ -40,7 +40,7 @@ inserer a la place de ```return disk```
        return check_blk
 ``` {{copy}}
  
- inserer a la place de ```return check_blk```
+ in VS Code insert the following lines on the line  ```return check_blk``` to overwrite it 
  ```
     #return check_blk
     for t in type_format:
