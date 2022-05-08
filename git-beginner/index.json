@@ -75,6 +75,10 @@
         "text": "merge.md"
       },
       {
+        "title": "Git rerere",
+        "text": "rerere.md"
+      },
+      {
         "title": "Pull-request",
         "text": "pull-request.md"
       },
