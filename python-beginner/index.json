@@ -32,7 +32,7 @@
 
     ],
     "intro": {
-      "courseData": "background.sh",
+      "courseData": "setup.sh",
       "code": "foreground.sh",
       "text": "intro.md"
     },
@@ -41,8 +41,11 @@
     }
   },
   "environment": {
+    "hideintro": true,
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mVotre bash en interactif.\u001b[m\r\n"
+    "uieditorpath": "/root/example",
+    "showide": true,
+    "uimessage1": "\u001b[32mInteractif bash.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu:2004"

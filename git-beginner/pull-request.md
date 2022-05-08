@@ -100,5 +100,10 @@ check
 git log --oneline
 ```{{ execute T1 }}
 
+Push
+ ```
+git push
+```{{ execute T1 }}
+
 **At this point the trainer should manage the pull-request on its own due to permission rights on the upstream repo**
  

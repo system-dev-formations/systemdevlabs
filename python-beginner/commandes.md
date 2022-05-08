@@ -17,6 +17,6 @@ if 'Disk /' in a:
 else:
     print('ko')
 # affiche le resultat
-```{{ execute T1 }}
+```{{ copy }}
 
 Tapez Enter pour voir le resultat

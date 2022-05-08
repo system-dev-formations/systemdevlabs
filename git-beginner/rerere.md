@@ -111,7 +111,7 @@ git merge test
 ```{{ execute T1 }}
 
 See the line "Recorded preimage for 'calc.html'
-edit calc.html and modify the title 
+edit calc.html 
 
 ```
 git rerere diff
@@ -122,7 +122,7 @@ git add .
 ```{{ execute T1 }}
 
 ```
-git commit -m "Solve merge of test conflict"
+git commit -m "Solved merge of test "
 ```{{ execute T1 }}
 
 check 
