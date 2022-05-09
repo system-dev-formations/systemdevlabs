@@ -13,7 +13,7 @@ In VS code open folder tp-airbus
 
 create a file named format_device.yml 
 
-```
+```python
 ---
 - name: format disk
   become: true
@@ -35,7 +35,7 @@ Put the cursor on a top and select all lines
 
 add this code in myfilters.py
 
-```
+```python
 from natsort import natsorted
 import subprocess
 import re
@@ -72,7 +72,7 @@ go the the main console and check
 
 ```
 cd ~/tp-airbus &&
-ansible-playbook -i inventory_local format_device.yml
+ansible-playbook -i inventory_children format_device.yml
 ```{{ execute T1}}
 
 ## Give some info to git regarding your identity
