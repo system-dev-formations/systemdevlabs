@@ -41,7 +41,7 @@ in VS Code insert the following lines on the line  ```return disk``` to overwrit
             if val in check_blk:
                 flag = 1
         if flag == 0:
-            device.add(inter[1][:-1])                
+            device.append(inter[1][:-1])                
    return device
 ``` {{copy}}
  
