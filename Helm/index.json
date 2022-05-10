@@ -1,0 +1,32 @@
+{
+    "noindex": true,
+    "title": "Helm",
+    "description": "Package manager for kubernetes",
+    "difficulty": "Intermediate",
+    "time": "60 minutes",
+    "details": {
+        "intro": {
+            "courseData": "background.sh",
+            "code": "foreground.sh",
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Pre-requisite on Kubernetes",
+                "text": "requisite.md"
+            }
+        ],
+        "assets": {
+            "host01": [
+                {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            ]
+        }
+    },
+    "files": [],
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
