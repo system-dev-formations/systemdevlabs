@@ -16,6 +16,20 @@ Save in github
 git add . 
 ```{{ execute T1 }} 
 
+## Give some info to git regarding your identity 
+Set your email and user name
+```
+git config --global user.email "dockerlite@gmail.com"
+```{{ copy }}
+Right click on the console and paste  
+Change the email address   
+```
+git config --global user.name "Herve"
+```{{ copy }}
+Right-click on the console and paste   
+Put your name 
+
+
 ```
 git commit -m " changed inventory"
 ```{{ execute T1 }}

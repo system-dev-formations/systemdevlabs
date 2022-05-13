@@ -1,7 +1,9 @@
 Add a file setup-CentOS.yml
 ```
-cd ~ && cd tp-airbus/postgresql.role/tasks && vim setup-CentOS.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks 
 ```{{ execute T1 }}
+
+Create a file named setup-CentOS.yml
 
 ```yaml
 ---
@@ -16,11 +18,13 @@ cd ~ && cd tp-airbus/postgresql.role/tasks && vim setup-CentOS.yml
     state: present
 ```{{ copy }}
 
-Add a file  initialize.yml
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/tasks && vim initialize.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks 
 ```{{ execute T1 }}
+
+Create file named initialize.yml
+
 
 Copy and paste this code 
 ```yaml
@@ -54,10 +58,10 @@ Copy and paste this code
   become_user: "{{ postgresql_user }}"
 ```{{ copy }}
 
-Add users.yml file
+create  users.yml file
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/tasks && vim users.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks
 ```{{ execute T1 }}
 
 Copy and Paste this code 
@@ -84,8 +88,10 @@ Copy and Paste this code
 
 Add the file which the mix of the distribution name and version , here it's CentOS-7.yml
 ```
-cd ~ && cd tp-airbus/postgresql.role/tasks && vim CentOS-7.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks 
 ```{{ execute T1 }}
+
+Create a file named CentOS-7.yml 
 
 Copy/paste this code 
 ```yaml
@@ -108,8 +114,11 @@ postgresql_python_library:
 Add an handler, it will restart postgres service automatically when the postgres configuration is modified
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/handlers && vim main.yml
+cd ~ && cd tp-airbus/postgresql.role/handlers 
 ```{{ execute T1 }}
+
+Edit main.yml
+
 
 ```yaml
 - name: restart postgresql
@@ -123,8 +132,10 @@ cd ~ && cd tp-airbus/postgresql.role/handlers && vim main.yml
 Add a defaults
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/defaults && vim main.yml
+cd ~ && cd tp-airbus/postgresql.role/defaults 
 ```{{ execute T1 }}
+
+Edit main.yml
 
 Copy and paste this code
 
@@ -145,10 +156,11 @@ postgresql_users: []
 ```{{ copy }}
 
 Add a templates jinja2 file 
-
 ```
-cd ~ && cd tp-airbus/postgresql.role/templates && vim postgres.sh.j2
+cd ~ && cd tp-airbus/postgresql.role/templates  
 ```{{ execute T1 }}
+
+Create in template a file named postgres.sh.j2
 
 Copy and paste this code
 ```shell

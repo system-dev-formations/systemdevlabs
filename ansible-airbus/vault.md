@@ -25,8 +25,8 @@ cat main.yml
 Enter a password for ansible-vault 
 Save this password 
 ```shell
-cd ~ && vim mysecret 
-```{{ execute T1 }}
+cd ~ # && echo "my_secret_password" > mysecret 
+```{{ copy }}
 
 go back to tp-airbus 
 ```shell

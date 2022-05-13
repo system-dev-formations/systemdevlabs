@@ -1,6 +1,8 @@
 
 Wait until all containers are up and running 
 
+<span style="color: red;">NOTE: If you already have a tp-airbus repository go to step 3</span>
+
 Move to the github repo previously downloaded when starting this scenario
 ```
 cd ansible-course

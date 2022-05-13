@@ -56,22 +56,21 @@ ansible-playbook -i inventory_children new_filter.yml --limit target2
 ```{{ execute T1 }}
 
 check the code source of the filter
-```
-cd ~ && cd tp-airbus/filter_plugins && vim my_filters.py
-```{{ execute T1 }}
-
-
-Usage a customized filter, this filter switches the latest of glusterfs release in git repo   
+Edit with VS Code IDE the my_filter.py file in filter_plugins directory
+   
 ```
 cd ~ && cd tp-airbus
 ```{{ execute T1 }}
+
+This playbook uses a filter for getting the latest  release version of glusterfs source code. 
+Switch git on the latest release tag, ready to be compile and deploy on the remote host
 
 ```shell
 ansible-playbook -i inventory_children git_version_filter.yml --limit target2
 ```{{ execute T1 }}
 
 
-Install of version of git package on all os 
+Install of version of git package on all os version 
 ```shell
 ansible-playbook -i inventory_children install_on_multios.yml
 ```{{ execute T1 }}

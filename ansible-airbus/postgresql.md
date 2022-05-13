@@ -53,8 +53,10 @@ ansible leader -m setup -a "filter=ansible_distribution_version"   -i inventory_
 
 Create a file named variables.yml 
 ```
-cd ~ && vi tp-airbus/postgresql.role/tasks/variables.yml 
+cd ~ && cd tp-airbus/postgresql.role/tasks 
 ```{{ execute T1 }}
+
+Create a file variables.yml
 
 Copy and paste this code 
 ```yaml
@@ -66,8 +68,10 @@ Copy and paste this code
 ```{{ copy }}
 
 ```
-cd ~ && cd tp-airbus/postgresql.role/tasks && vim main.yml
+cd ~ && cd tp-airbus/postgresql.role/tasks 
 ```{{ execute T1 }}
+
+edit main.yml 
 
 Put your cursor after the line starting with #
 

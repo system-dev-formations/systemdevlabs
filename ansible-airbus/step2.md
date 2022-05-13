@@ -20,7 +20,7 @@ git init
 Get your github url 
 and enter this command
 ```shell
-git remote add origin < your url tp-airbus gitrepo>
+git remote add origin https://github.com/<your github account>/tp-airbus.git
 ```{{ copy }}
 
 ## Give some info to git regarding your identity 
@@ -38,7 +38,7 @@ Put your name
 
 Add all files 
 ```
-git add -A
+git add .
 ```{{execute T1}}
 
 commit  
