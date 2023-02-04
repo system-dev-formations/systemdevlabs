@@ -25,7 +25,7 @@ wrong files were added, but they were not yet committed,
 then a simple reset will remove the files from the staging area, but doesn’t actually delete the files:
 
 ```
-git reset HEAD name.txt
+git reset HEAD~1
 ```{{ execute T1 }}
 
 make a commit and notice a stray directory or a file (for example .DS_Store)

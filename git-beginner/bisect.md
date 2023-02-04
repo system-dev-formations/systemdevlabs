@@ -3,7 +3,6 @@ provides a mechanism for quickly locating where a problem or change
 was introduced in a range of commits.
 
 fork the is repo to your github personal account
-https://github.com/system-dev-formations/bisect2.git
 
 ```shell
 git clone https://github.com/<your_repo>/bisect2.git && cd bisect2

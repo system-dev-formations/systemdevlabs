@@ -38,13 +38,6 @@ git status
 git show :.gitmodules
 ```{{ execute T1 }}
 
-
-
-
-
-
-
-
 Now you need to commit and push the staged submodule mapping
 and data to your local and remote repositories. Run the following
 commands:
@@ -66,6 +59,13 @@ git log --oneline
 Now you can clone a new copy of this project with the submodule.
 Change to a higher-level directory and clone a copy of the project
 down as super_calc2.
+
+
+
+
+
+
+
 
 ```
 cd ~ && git clone https://github.com/<your github account>/super_calc.git super_calc2
