@@ -5,7 +5,8 @@ Hit the following command for getting the git version
 ```
 clear && git --version 
 ```{{execute T1}}
-## Find  the latest version of git
+## Find  the latest version of git/git on github
+
 ```
 cd ~/git
 ```{{ execute T1 }}
@@ -50,7 +51,7 @@ git status
 ## Give some info to git regarding your identity 
 Set your email and user name
 ```
-git config --global user.email "dockerlite@gmail.com"
+git config --global user.email "xxxxx@gmail.com"
 ```{{ copy }}
 Right click on the console and paste  
 Change the email address   
@@ -60,4 +61,8 @@ git config --global user.name "Herve"
 Right-click on the console and paste   
 Put your name   
 
+```
+git config --list | grep user.email 
+```{{ copy }}
+Check the user.mail recorded in git environment 
 
