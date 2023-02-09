@@ -30,6 +30,8 @@ Get the content of a file using the SHA1 index
 git cat-file -p <SHA1>
 ```{{ copy }}
 
+
+
 In a porcelain Git workflow, you add files to the index with **git add**, then take a snapshot of the index with git commit. 
 With plumbing, there are several extra steps
 

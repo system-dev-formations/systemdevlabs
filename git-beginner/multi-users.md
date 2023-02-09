@@ -33,8 +33,8 @@ git log --oneline ui
 
 
 
-Merge the ui branch into master. (If you are not still on master,
-check out master first.)
+Merge the ui branch into main. (If you are not still on main,
+check out main first.)
 ```
 git merge ui
 ```{{ execute T1 }}
@@ -47,7 +47,7 @@ Assuming the merge is successful, push the updates out to the
 remote.
 
 ```
-git push origin master
+git push origin main
 ```{{ execute T1 }}
 
 ![push_conflicted](./assets/conflicted-push.png)
@@ -63,7 +63,7 @@ try the suggestion that Git offers and do a pull to see if it can merge
 cleanly.
 
 ```
-git pull origin master
+git pull origin main
 ```{{ execute T1 }}
 
 Notice again that you have a merge conflict. You could certainly go
@@ -95,7 +95,7 @@ git log --oneline
 
 
 ```
-git log --oneline origin/master
+git log --oneline origin/main
 ```{{ execute T1 }}
 
 ![origin-master](./assets/origin-master.png)
@@ -105,7 +105,7 @@ will rebase locally off of the updated content from the master in the
 remote tracking branches. Run the following command (making
 sure you are in the master branch when you do so):
 ```
-git rebase origin/master
+git rebase origin/main
 ```{{ execute T1 }}
 
 Once again, conflicts arise. Because the changes are different,

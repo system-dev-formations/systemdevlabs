@@ -22,3 +22,14 @@ Check
 ```
 git log --oneline 
 ```{{execute T1}}
+
+
+bd38c29 (HEAD -> main)  added version 4
+5425669 (origin/main) version 3 is there now
+dd941cf version 2 now
+fd64c5d first initial commit
+
+
+
+
+

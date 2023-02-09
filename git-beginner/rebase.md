@@ -30,7 +30,7 @@ ready to merge that branch back into the master branch. Run the
 following commands:
 
 ```
-git checkout master
+git checkout main
 ```{{ execute T1 }}
 
 ```

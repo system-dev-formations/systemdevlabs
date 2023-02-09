@@ -1,6 +1,6 @@
 How to manage a project in github   
 
-In your gitub account, create a new repository named **git-airbus**   
+In your gitub account, create a new repository named **git-webforce3**   
 Select Public, check README, .gitignore  and License   
 
 Go to a github account and select Settings->Developer setting->Personal access tokens
@@ -16,11 +16,11 @@ cd ~
 ## Clone your Github repo to your local environment  
 Change the current url below   
 ```
-git clone https://github.com/<github_account>/git-airbus.git
+git clone https://github.com/<github_account>/git-webforce3.git
 ```{{ copy }} 
 and 
 ```shell
-cd git-airbus
+cd git-webforce3
 ```{{ execute T1 }}
 
 ## check how the local repo is connected to the remote repo
@@ -57,3 +57,4 @@ Copy/Paste your token as a password previously saved in notepad
 git push --set-upstream origin master
 ```{{ execute T1 }}
 
+git branch -M main
